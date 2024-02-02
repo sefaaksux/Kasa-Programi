@@ -4,23 +4,21 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace AksuHaliEvi
 {
-    public partial class Kasa : Form
+    public partial class ParaGirisListele : Form
     {
-
-        private readonly MyDbContext _context;
-        public Kasa()
+        MyDbContext _context;
+        public ParaGirisListele()
         {
             InitializeComponent();
             _context = new MyDbContext();
         }
-
-       
 
         private void SetFontAndColors()
         {
@@ -31,15 +29,17 @@ namespace AksuHaliEvi
             this.dataGridView1.DefaultCellStyle.SelectionBackColor = Color.Black;
         }
 
-        private void Kasa_Load(object sender, EventArgs e)
+        private void ParaGirisListele_Load(object sender, EventArgs e)
         {
             SetFontAndColors();
-            var query = from item in _context.Turnovers
-                        select new
-                        {
-                            ToplamGiris = item.TotalIncome,
-                            ToplamCikis = item.TotalExpense
-                        };
+            var query = from item in _context.Incomes
+                        join mymethot in _context.PaymentMethods on item.MethodID equals mymethot.MethodID  
+                        select new{
+                                           TUTAR = item.Amount,
+                                           AÇIKLAMA = item.Description,
+                                           ÖDEMEYÖNTEMİ = mymethot.MethodName,
+                                           TARİH = item.IncomeDate
+                                   };
             dataGridView1.DataSource = query.ToList();
         }
     }

@@ -125,7 +125,7 @@
             "AVANS"});
             this.cmb_odemeYontemi.Location = new System.Drawing.Point(269, 193);
             this.cmb_odemeYontemi.Name = "cmb_odemeYontemi";
-            this.cmb_odemeYontemi.Size = new System.Drawing.Size(194, 28);
+            this.cmb_odemeYontemi.Size = new System.Drawing.Size(278, 28);
             this.cmb_odemeYontemi.TabIndex = 10;
             // 
             // dtp_tarih
@@ -133,7 +133,7 @@
             this.dtp_tarih.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.dtp_tarih.Location = new System.Drawing.Point(269, 147);
             this.dtp_tarih.Name = "dtp_tarih";
-            this.dtp_tarih.Size = new System.Drawing.Size(194, 24);
+            this.dtp_tarih.Size = new System.Drawing.Size(278, 24);
             this.dtp_tarih.TabIndex = 9;
             // 
             // txt_aciklama
@@ -142,7 +142,7 @@
             this.txt_aciklama.Location = new System.Drawing.Point(269, 234);
             this.txt_aciklama.Multiline = true;
             this.txt_aciklama.Name = "txt_aciklama";
-            this.txt_aciklama.Size = new System.Drawing.Size(194, 111);
+            this.txt_aciklama.Size = new System.Drawing.Size(278, 111);
             this.txt_aciklama.TabIndex = 8;
             // 
             // txt_tutar
@@ -150,14 +150,14 @@
             this.txt_tutar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txt_tutar.Location = new System.Drawing.Point(269, 101);
             this.txt_tutar.Name = "txt_tutar";
-            this.txt_tutar.Size = new System.Drawing.Size(162, 30);
+            this.txt_tutar.Size = new System.Drawing.Size(249, 30);
             this.txt_tutar.TabIndex = 7;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(437, 102);
+            this.label6.Location = new System.Drawing.Point(524, 104);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(23, 25);
             this.label6.TabIndex = 20;

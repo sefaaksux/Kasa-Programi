@@ -68,5 +68,10 @@ namespace AksuHaliEvi
             anasayfa.Show();
             this.Hide();
         }
+
+        private void ParaGirisi_Load(object sender, EventArgs e)
+        {
+            cmb_odemeYontemi.SelectedIndex = 0;
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace AksuHaliEvi
 {
-    partial class Kasa
+    partial class ParaGirisListele
     {
         /// <summary>
         /// Required designer variable.
@@ -39,20 +39,19 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(690, 137);
+            this.dataGridView1.Size = new System.Drawing.Size(706, 425);
             this.dataGridView1.TabIndex = 0;
             // 
-            // Kasa
+            // ParaGirisListele
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(690, 137);
+            this.ClientSize = new System.Drawing.Size(706, 425);
             this.Controls.Add(this.dataGridView1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "Kasa";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Kasa";
-            this.Load += new System.EventHandler(this.Kasa_Load);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "ParaGirisListele";
+            this.Text = "ParaGirisListele";
+            this.Load += new System.EventHandler(this.ParaGirisListele_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

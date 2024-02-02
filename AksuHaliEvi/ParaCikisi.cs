@@ -67,7 +67,7 @@ namespace AksuHaliEvi
 
         private void ParaCikisi_Load(object sender, EventArgs e)
         {
-
+            cmb_odemeYontemi.SelectedIndex = 0;
         }
     }
 }
