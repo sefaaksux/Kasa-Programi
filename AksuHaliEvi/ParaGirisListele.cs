@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -41,6 +42,54 @@ namespace AksuHaliEvi
                                            TARİH = item.IncomeDate
                                    };
             dataGridView1.DataSource = query.ToList();
+
+
+
+
+
+        }
+
+        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        {
+            DateTime baslangic = monthCalendar1.SelectionStart;
+            DateTime bitis = monthCalendar1.SelectionEnd;
+
+            var query = from item in _context.Incomes
+                        join mymethod in _context.PaymentMethods on item.MethodID equals mymethod.MethodID
+                        where item.IncomeDate >= baslangic && item.IncomeDate <= bitis
+                        select new
+                        {
+                            TUTAR = item.Amount,
+                            AÇIKLAMA = item.Description,
+                            ÖDEMEYÖNTEMİ = mymethod.MethodName,
+                            TARİH = item.IncomeDate
+                        };
+            dataGridView1.DataSource = query.ToList();
+
+           lbl1.Text = (baslangic.ToShortDateString() +" / "+bitis.ToShortDateString()).ToString();
+
+            decimal toplamTutar = _context.Incomes
+            .Where(i => i.IncomeDate >= baslangic && i.IncomeDate <= bitis)
+            .Sum(i => i.Amount);
+
+            lbl2.Text = (Convert.ToUInt32( toplamTutar)+" TL").ToString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SetFontAndColors();
+            var query = from item in _context.Incomes
+                        join mymethot in _context.PaymentMethods on item.MethodID equals mymethot.MethodID
+                        select new
+                        {
+                            TUTAR = item.Amount,
+                            AÇIKLAMA = item.Description,
+                            ÖDEMEYÖNTEMİ = mymethot.MethodName,
+                            TARİH = item.IncomeDate
+                        };
+            dataGridView1.DataSource = query.ToList();
+            lbl1.Text = "";
+            lbl2.Text = "";
         }
     }
 }

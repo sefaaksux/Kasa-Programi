@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(anasayfa));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbl_anasayfa = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btn_paracikisisayfa = new System.Windows.Forms.Button();
             this.btn_paragirisisayfa = new System.Windows.Forms.Button();
             this.hedefPanel = new System.Windows.Forms.Panel();
-            this.lbl_anasayfa = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.hedefPanel.SuspendLayout();
@@ -56,6 +56,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 425);
             this.panel1.TabIndex = 2;
+            // 
+            // lbl_anasayfa
+            // 
+            this.lbl_anasayfa.AutoSize = true;
+            this.lbl_anasayfa.Font = new System.Drawing.Font("MS Reference Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_anasayfa.Location = new System.Drawing.Point(52, 10);
+            this.lbl_anasayfa.Name = "lbl_anasayfa";
+            this.lbl_anasayfa.Size = new System.Drawing.Size(93, 18);
+            this.lbl_anasayfa.TabIndex = 6;
+            this.lbl_anasayfa.Text = "ANASAYFA";
+            this.lbl_anasayfa.Click += new System.EventHandler(this.lbl_anasayfa_Click);
             // 
             // button4
             // 
@@ -140,17 +151,6 @@
             this.hedefPanel.Name = "hedefPanel";
             this.hedefPanel.Size = new System.Drawing.Size(706, 425);
             this.hedefPanel.TabIndex = 3;
-            // 
-            // lbl_anasayfa
-            // 
-            this.lbl_anasayfa.AutoSize = true;
-            this.lbl_anasayfa.Font = new System.Drawing.Font("MS Reference Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_anasayfa.Location = new System.Drawing.Point(52, 10);
-            this.lbl_anasayfa.Name = "lbl_anasayfa";
-            this.lbl_anasayfa.Size = new System.Drawing.Size(93, 18);
-            this.lbl_anasayfa.TabIndex = 6;
-            this.lbl_anasayfa.Text = "ANASAYFA";
-            this.lbl_anasayfa.Click += new System.EventHandler(this.lbl_anasayfa_Click);
             // 
             // pictureBox1
             // 

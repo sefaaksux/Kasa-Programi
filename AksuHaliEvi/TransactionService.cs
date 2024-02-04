@@ -21,7 +21,7 @@ namespace AksuHaliEvi
             {
                 Amount = amount,
                 IncomeDate = incomeDate,
-                Description = description,
+                Description = description,        
                 MethodID = methodId
             };
 

@@ -33,24 +33,31 @@ namespace AksuHaliEvi
                 int tutar = Convert.ToInt32(txt_tutar.Text);
                 string aciklama = txt_aciklama.Text;
                 int odemeYontemi = cmb_odemeYontemi.SelectedIndex;
+                DateTime tarih = dtp_tarih.Value;
 
-
-                DialogResult sonuc = MessageBox.Show("PARA ÇIKIŞINI ONAYLIYOR MUSUNUZ ?", "PARA ÇIKIŞI", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-                if (sonuc == DialogResult.Yes)
+                if(odemeYontemi == 0)
                 {
-                    // Para Girişi
-                    _transactionService.AddExpense(tutar, DateTime.Now, aciklama, odemeYontemi);
-
-                    // Veritabanına değişiklikleri kaydet
-                    _context.SaveChanges();
-
-                    MessageBox.Show("Para çıkışı başarıyla kaydedildi.");
+                    MessageBox.Show("LÜTFEN BİR ÖDEME YÖNTEMİ SEÇİNİZ ! ", "ÖDEME YÖNTEMİ", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
-                    temizle();
-                }
+                    DialogResult sonuc = MessageBox.Show("PARA ÇIKIŞINI ONAYLIYOR MUSUNUZ ?", "PARA ÇIKIŞI", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                    if (sonuc == DialogResult.Yes)
+                    {
+                        // Para Girişi
+                        _transactionService.AddExpense(tutar, tarih, aciklama, odemeYontemi);
+
+                        // Veritabanına değişiklikleri kaydet
+                        _context.SaveChanges();
+
+                        MessageBox.Show("Para çıkışı başarıyla kaydedildi.");
+                    }
+                    else
+                    {
+                        temizle();
+                    }
+                }        
             }
         }
         public void temizle()

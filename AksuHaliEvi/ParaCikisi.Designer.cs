@@ -45,44 +45,44 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Book Antiqua", 15F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(72, 196);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(180, 26);
+            this.label5.Size = new System.Drawing.Size(193, 24);
             this.label5.TabIndex = 13;
             this.label5.Text = "ÖDEME YÖNTEMİ";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Book Antiqua", 15F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(138, 237);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(114, 26);
+            this.label4.Size = new System.Drawing.Size(128, 24);
             this.label4.TabIndex = 14;
             this.label4.Text = "AÇIKLAMA";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Book Antiqua", 15F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(165, 150);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 26);
+            this.label3.Size = new System.Drawing.Size(92, 24);
             this.label3.TabIndex = 15;
             this.label3.Text = "ZAMAN";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Book Antiqua", 15F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(175, 101);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 26);
+            this.label2.Size = new System.Drawing.Size(82, 24);
             this.label2.TabIndex = 16;
             this.label2.Text = "TUTAR";
             // 
@@ -104,13 +104,13 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Font = new System.Drawing.Font("Perpetua Titling MT", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Linen;
-            this.label1.Location = new System.Drawing.Point(221, 14);
+            this.label1.Location = new System.Drawing.Point(234, 21);
             this.label1.MaximumSize = new System.Drawing.Size(500, 0);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(8);
-            this.label1.Size = new System.Drawing.Size(238, 54);
+            this.label1.Size = new System.Drawing.Size(221, 50);
             this.label1.TabIndex = 11;
             this.label1.Text = "PARA ÇIKIŞI";
             // 
@@ -122,7 +122,8 @@
             "Seçiniz",
             "KREDİ KARTI",
             "NAKİT",
-            "AVANS"});
+            "FİRMADAN ÇEKİŞ",
+            "SENET TAHSİL"});
             this.cmb_odemeYontemi.Location = new System.Drawing.Point(269, 193);
             this.cmb_odemeYontemi.Name = "cmb_odemeYontemi";
             this.cmb_odemeYontemi.Size = new System.Drawing.Size(278, 28);

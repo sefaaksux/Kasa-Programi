@@ -18,7 +18,7 @@ namespace AksuHaliEvi
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             // Veritabanı bağlantı bilgilerinizi burada belirtin.
-            optionsBuilder.UseSqlServer("Server=DESKTOP-EHV3NLA\\SQLEXPRESS; Database=AksuHaliEvi; User Id=sa;Password=1;");
+            optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS; Database=AksuHaliEvi; Integrated Security = True");
         }
     }
 

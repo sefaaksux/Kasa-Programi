@@ -33,18 +33,15 @@ namespace AksuHaliEvi
         }
 
         private void btn_paragirisisayfa_Click_1(object sender, EventArgs e)
-        {
-       
+        {          
             ParaGirisi frm = new ParaGirisi();
             hedefDegistir(frm);          
         }
 
         private void btn_paracikisisayfa_Click_1(object sender, EventArgs e)
-        {
-            
+        {          
             ParaCikisi paraCikisi = new ParaCikisi();
-            hedefDegistir(paraCikisi);
-            
+            hedefDegistir(paraCikisi);         
         }
 
         private void button2_Click(object sender, EventArgs e)
