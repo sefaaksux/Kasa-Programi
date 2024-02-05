@@ -33,7 +33,8 @@
             this.lbl_anasayfa = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_islemDuzenle = new System.Windows.Forms.Button();
+            this.btn_kasa = new System.Windows.Forms.Button();
             this.btn_paracikisisayfa = new System.Windows.Forms.Button();
             this.btn_paragirisisayfa = new System.Windows.Forms.Button();
             this.hedefPanel = new System.Windows.Forms.Panel();
@@ -45,10 +46,12 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.lbl_anasayfa);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btn_islemDuzenle);
+            this.panel1.Controls.Add(this.btn_kasa);
             this.panel1.Controls.Add(this.btn_paracikisisayfa);
             this.panel1.Controls.Add(this.btn_paragirisisayfa);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -61,6 +64,7 @@
             // 
             this.lbl_anasayfa.AutoSize = true;
             this.lbl_anasayfa.Font = new System.Drawing.Font("MS Reference Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_anasayfa.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lbl_anasayfa.Location = new System.Drawing.Point(52, 10);
             this.lbl_anasayfa.Name = "lbl_anasayfa";
             this.lbl_anasayfa.Size = new System.Drawing.Size(93, 18);
@@ -73,9 +77,9 @@
             this.button4.BackColor = System.Drawing.Color.Maroon;
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button4.Font = new System.Drawing.Font("Cambria", 15F);
             this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(3, 273);
+            this.button4.Location = new System.Drawing.Point(3, 235);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(194, 59);
             this.button4.TabIndex = 4;
@@ -88,9 +92,9 @@
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button2.Font = new System.Drawing.Font("Cambria", 15F);
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(3, 194);
+            this.button2.Location = new System.Drawing.Point(3, 170);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(194, 59);
             this.button2.TabIndex = 5;
@@ -98,30 +102,47 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // btn_islemDuzenle
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkGray;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(3, 355);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(194, 57);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "KASA";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.btn_islemDuzenle.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btn_islemDuzenle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_islemDuzenle.FlatAppearance.BorderSize = 0;
+            this.btn_islemDuzenle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_islemDuzenle.Font = new System.Drawing.Font("Cambria", 17F);
+            this.btn_islemDuzenle.ForeColor = System.Drawing.Color.Black;
+            this.btn_islemDuzenle.Location = new System.Drawing.Point(3, 363);
+            this.btn_islemDuzenle.Name = "btn_islemDuzenle";
+            this.btn_islemDuzenle.Size = new System.Drawing.Size(194, 57);
+            this.btn_islemDuzenle.TabIndex = 3;
+            this.btn_islemDuzenle.Text = "İŞLEM DÜZENLE";
+            this.btn_islemDuzenle.UseVisualStyleBackColor = false;
+            this.btn_islemDuzenle.Click += new System.EventHandler(this.btn_islemDuzenle_Click);
+            // 
+            // btn_kasa
+            // 
+            this.btn_kasa.BackColor = System.Drawing.Color.DarkGray;
+            this.btn_kasa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_kasa.FlatAppearance.BorderSize = 0;
+            this.btn_kasa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_kasa.Font = new System.Drawing.Font("Cambria", 17F);
+            this.btn_kasa.ForeColor = System.Drawing.Color.Black;
+            this.btn_kasa.Location = new System.Drawing.Point(3, 300);
+            this.btn_kasa.Name = "btn_kasa";
+            this.btn_kasa.Padding = new System.Windows.Forms.Padding(9);
+            this.btn_kasa.Size = new System.Drawing.Size(194, 57);
+            this.btn_kasa.TabIndex = 3;
+            this.btn_kasa.Text = "KASA";
+            this.btn_kasa.UseVisualStyleBackColor = false;
+            this.btn_kasa.Click += new System.EventHandler(this.btn_kasa_Click);
             // 
             // btn_paracikisisayfa
             // 
             this.btn_paracikisisayfa.BackColor = System.Drawing.Color.Crimson;
             this.btn_paracikisisayfa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_paracikisisayfa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_paracikisisayfa.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_paracikisisayfa.Font = new System.Drawing.Font("Cambria", 17F);
             this.btn_paracikisisayfa.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_paracikisisayfa.Location = new System.Drawing.Point(3, 117);
+            this.btn_paracikisisayfa.Location = new System.Drawing.Point(3, 105);
             this.btn_paracikisisayfa.Name = "btn_paracikisisayfa";
             this.btn_paracikisisayfa.Size = new System.Drawing.Size(194, 59);
             this.btn_paracikisisayfa.TabIndex = 2;
@@ -134,7 +155,7 @@
             this.btn_paragirisisayfa.BackColor = System.Drawing.Color.SeaGreen;
             this.btn_paragirisisayfa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_paragirisisayfa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_paragirisisayfa.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_paragirisisayfa.Font = new System.Drawing.Font("Cambria", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_paragirisisayfa.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_paragirisisayfa.Location = new System.Drawing.Point(3, 40);
             this.btn_paragirisisayfa.Name = "btn_paragirisisayfa";
@@ -189,11 +210,12 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_kasa;
         private System.Windows.Forms.Button btn_paracikisisayfa;
         private System.Windows.Forms.Button btn_paragirisisayfa;
         private System.Windows.Forms.Panel hedefPanel;
         private System.Windows.Forms.Label lbl_anasayfa;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btn_islemDuzenle;
     }
 }

@@ -17,12 +17,6 @@ namespace AksuHaliEvi
         {
             InitializeComponent();
         }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Kasa kasa = new Kasa();
-            kasa.Show();
-           
-        }
 
         private void hedefDegistir(Form Frm)
         {
@@ -60,13 +54,6 @@ namespace AksuHaliEvi
             hedefDegistir(frm);
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            
-            Kasa frm = new Kasa();
-            frm.Show();
-            
-        }
 
         private void lbl_anasayfa_Click(object sender, EventArgs e)
         {
@@ -78,6 +65,18 @@ namespace AksuHaliEvi
         {
             resimgetir resimgetir = new resimgetir();
             hedefDegistir(resimgetir);
+        }
+
+        private void btn_kasa_Click(object sender, EventArgs e)
+        {
+            Kasa kasa = new Kasa();
+            kasa.Show();
+        }
+
+        private void btn_islemDuzenle_Click(object sender, EventArgs e)
+        {
+            İslemDuzenlemeSecim islemDuzenleme = new İslemDuzenlemeSecim();
+            islemDuzenleme.Show();
         }
     }
 }

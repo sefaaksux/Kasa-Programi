@@ -19,9 +19,6 @@ namespace AksuHaliEvi
             InitializeComponent();
             _context = new MyDbContext();
         }
-
-       
-
         private void SetFontAndColors()
         {
             this.dataGridView1.DefaultCellStyle.Font = new Font("Tahoma", 10);
@@ -30,17 +27,27 @@ namespace AksuHaliEvi
             this.dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Yellow;
             this.dataGridView1.DefaultCellStyle.SelectionBackColor = Color.Black;
         }
-
+        public class TotalSummary
+        {
+            public decimal ToplamGiris { get; set; }
+            public decimal ToplamCikis { get; set; }
+            public decimal Fark { get; set; }
+        }
         private void Kasa_Load(object sender, EventArgs e)
         {
-            SetFontAndColors();
-            var query = from item in _context.Turnovers
-                        select new
-                        {
-                            ToplamGiris = item.TotalIncome,
-                            ToplamCikis = item.TotalExpense
-                        };
-            dataGridView1.DataSource = query.ToList();
+             SetFontAndColors();
+
+            var query = new TotalSummary
+            {
+                ToplamGiris = _context.Incomes.Sum(x => x.Amount),
+                ToplamCikis = _context.Expenses.Sum(x => x.Amount),
+                Fark = Math.Abs(_context.Incomes.Sum(x => x.Amount) - _context.Expenses.Sum(x => x.Amount))
+            };
+
+            List<TotalSummary> resultList = new List<TotalSummary> { query };
+
+            dataGridView1.DataSource = resultList;
+
         }
     }
 }

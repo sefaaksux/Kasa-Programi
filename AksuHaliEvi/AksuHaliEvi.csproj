@@ -168,6 +168,12 @@
     <Compile Include="anasayfa.Designer.cs">
       <DependentUpon>anasayfa.cs</DependentUpon>
     </Compile>
+    <Compile Include="DuzenleParaCikis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DuzenleParaCikis.Designer.cs">
+      <DependentUpon>DuzenleParaCikis.cs</DependentUpon>
+    </Compile>
     <Compile Include="Expense.cs" />
     <Compile Include="Kasa.cs">
       <SubType>Form</SubType>
@@ -184,6 +190,14 @@
     <Compile Include="Migrations\20240202140826_userClassCreated.cs" />
     <Compile Include="Migrations\20240202140826_userClassCreated.designer.cs">
       <DependentUpon>20240202140826_userClassCreated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20240204221657_mg1RemainderAdded.cs" />
+    <Compile Include="Migrations\20240204221657_mg1RemainderAdded.designer.cs">
+      <DependentUpon>20240204221657_mg1RemainderAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20240204222416_mg2RemainderDeleted.cs" />
+    <Compile Include="Migrations\20240204222416_mg2RemainderDeleted.designer.cs">
+      <DependentUpon>20240204222416_mg2RemainderDeleted.cs</DependentUpon>
     </Compile>
     <Compile Include="ParaCikisi.cs">
       <SubType>Form</SubType>
@@ -229,8 +243,23 @@
     <Compile Include="Turnover.cs" />
     <Compile Include="User.cs" />
     <Compile Include="UserService.cs" />
+    <Compile Include="DuzenleParaGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DuzenleParaGiris.Designer.cs">
+      <DependentUpon>DuzenleParaGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İslemDuzenlemeSecim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İslemDuzenlemeSecim.Designer.cs">
+      <DependentUpon>İslemDuzenlemeSecim.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="anasayfa.resx">
       <DependentUpon>anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DuzenleParaCikis.resx">
+      <DependentUpon>DuzenleParaCikis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kasa.resx">
       <DependentUpon>Kasa.cs</DependentUpon>
@@ -261,6 +290,12 @@
     </Compile>
     <EmbeddedResource Include="resimgetir.resx">
       <DependentUpon>resimgetir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DuzenleParaGiris.resx">
+      <DependentUpon>DuzenleParaGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İslemDuzenlemeSecim.resx">
+      <DependentUpon>İslemDuzenlemeSecim.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -96,3 +96,6 @@ C:\Users\AKSU\Desktop\AksuHaliEvi\AksuHaliEvi\obj\Debug\AksuHaliEvi.pdb
 C:\Users\AKSU\Desktop\AksuHaliEvi\AksuHaliEvi\obj\Debug\AksuHaliEvi.ParaGirisListele.resources
 C:\Users\AKSU\Desktop\AksuHaliEvi\AksuHaliEvi\obj\Debug\AksuHaliEvi.ParaCikisiListele.resources
 C:\Users\AKSU\Desktop\AksuHaliEvi\AksuHaliEvi\obj\Debug\AksuHaliEvi.resimgetir.resources
+C:\Users\AKSU\Desktop\AksuHaliEvi\AksuHaliEvi\obj\Debug\AksuHaliEvi.DuzenleParaCikis.resources
+C:\Users\AKSU\Desktop\AksuHaliEvi\AksuHaliEvi\obj\Debug\AksuHaliEvi.DuzenleParaGiris.resources
+C:\Users\AKSU\Desktop\AksuHaliEvi\AksuHaliEvi\obj\Debug\AksuHaliEvi.İslemDuzenlemeSecim.resources
