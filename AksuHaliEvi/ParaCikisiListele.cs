@@ -89,6 +89,27 @@ namespace AksuHaliEvi
 
             lbl1.Text = "";
             lbl2.Text = "";
+            txt_arama.Text = "";
+        }
+
+        private void txt_arama_TextChanged(object sender, EventArgs e)
+        {
+            string aranan = txt_arama.Text.ToLower();
+
+            var query = (from Expense in _context.Expenses
+                         join paymentMethod in _context.PaymentMethods
+                         on Expense.MethodID equals paymentMethod.MethodID
+                         where Expense.Description.ToLower().Contains(aranan)
+                         select new
+                         {
+                             Expense.Amount,
+                             Expense.Description,
+                             paymentMethod.MethodName,
+                             Expense.ExpenseDate
+                         }).ToList();
+
+
+            dataGridView1.DataSource = query;
         }
     }
 }

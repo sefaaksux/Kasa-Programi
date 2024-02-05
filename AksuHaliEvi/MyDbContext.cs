@@ -13,7 +13,7 @@ namespace AksuHaliEvi
         public DbSet<PaymentMethod> PaymentMethods { get; set; }
         public DbSet<Income> Incomes { get; set; }
         public DbSet<Expense> Expenses { get; set; }
-        public DbSet<Turnover> Turnovers { get; set; }
+       
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

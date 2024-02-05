@@ -30,7 +30,7 @@ namespace AksuHaliEvi
             }
             else
             {
-                int tutar = Convert.ToInt32(txt_tutar.Text);
+                decimal tutar = Convert.ToDecimal(txt_tutar.Text);
                 string aciklama = txt_aciklama.Text;
                 int odemeYontemi = cmb_odemeYontemi.SelectedIndex;
                 DateTime tarih = dtp_tarih.Value;
@@ -52,6 +52,7 @@ namespace AksuHaliEvi
                         _context.SaveChanges();
 
                         MessageBox.Show("Para çıkışı başarıyla kaydedildi.");
+                        temizle();
                     }
                     else
                     {
@@ -64,6 +65,8 @@ namespace AksuHaliEvi
         {
             txt_aciklama.Text = "";
             txt_tutar.Text = "";
+            cmb_odemeYontemi.SelectedIndex = 0;
+            dtp_tarih.Value = DateTime.Now;
         }
         private void aNASAYFAToolStripMenuItem_Click(object sender, EventArgs e)
         {

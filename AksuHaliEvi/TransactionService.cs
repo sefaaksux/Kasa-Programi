@@ -98,10 +98,7 @@ namespace AksuHaliEvi
             _context.Incomes.Add(income);
             _context.SaveChanges();
 
-            var turnover = _context.Turnovers.FirstOrDefault();
-
-            turnover.TotalIncome += amount;
-            turnover.Date = DateTime.Now;
+           
             _context.SaveChanges();
 
         }
@@ -119,10 +116,6 @@ namespace AksuHaliEvi
             _context.Expenses.Add(expense);
             _context.SaveChanges();
 
-            var turnover = _context.Turnovers.FirstOrDefault();
-
-            turnover.TotalExpense += amount;
-            turnover.Date = DateTime.Now;
             _context.SaveChanges();
         }
     }

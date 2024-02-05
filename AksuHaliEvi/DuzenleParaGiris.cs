@@ -21,12 +21,23 @@ namespace AksuHaliEvi
             _context = new MyDbContext();
             _transactionService = new TransactionService(_context);
         }
+
+        private void textleriDoldur()
+        {
+            if (dataGridView1.RowCount > 0)
+            {
+                txt_tutar.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+                txt_aciklama.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+                cmb_odemeYontemi.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+                dtp_tarih.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+
+            }
+
+            
+        }
         private void dataGridView1_CellClick_1(object sender, DataGridViewCellEventArgs e)
         {
-            txt_tutar.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            txt_aciklama.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            cmb_odemeYontemi.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-            dtp_tarih.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            textleriDoldur();
         }
         private void SetFontAndColors()
         {
@@ -40,6 +51,7 @@ namespace AksuHaliEvi
         private void DuzenleParaGiris_Load(object sender, EventArgs e)
         {
             verileriGetir();
+            textleriDoldur();
         }
         private void verileriGetir()
         {
@@ -85,6 +97,7 @@ namespace AksuHaliEvi
                         txt_tutar.Text = "";
                         txt_aciklama.Text = "";
                         cmb_odemeYontemi.SelectedIndex = 0;
+                        dtp_tarih.Value = DateTime.Now;
                     }
                 }
 
@@ -105,6 +118,7 @@ namespace AksuHaliEvi
                 txt_tutar.Text = "";
                 txt_aciklama.Text = "";
                 cmb_odemeYontemi.SelectedIndex = 0;
+                dtp_tarih.Value = DateTime.Now;
             }
             
             

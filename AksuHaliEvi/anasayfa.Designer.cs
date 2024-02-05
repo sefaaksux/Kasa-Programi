@@ -39,6 +39,7 @@
             this.btn_paragirisisayfa = new System.Windows.Forms.Button();
             this.hedefPanel = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.hedefPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -57,7 +58,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 425);
+            this.panel1.Size = new System.Drawing.Size(200, 546);
             this.panel1.TabIndex = 2;
             // 
             // lbl_anasayfa
@@ -79,7 +80,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Cambria", 15F);
             this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(3, 235);
+            this.button4.Location = new System.Drawing.Point(3, 317);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(194, 59);
             this.button4.TabIndex = 4;
@@ -94,7 +95,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Cambria", 15F);
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(3, 170);
+            this.button2.Location = new System.Drawing.Point(3, 225);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(194, 59);
             this.button2.TabIndex = 5;
@@ -110,7 +111,7 @@
             this.btn_islemDuzenle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_islemDuzenle.Font = new System.Drawing.Font("Cambria", 17F);
             this.btn_islemDuzenle.ForeColor = System.Drawing.Color.Black;
-            this.btn_islemDuzenle.Location = new System.Drawing.Point(3, 363);
+            this.btn_islemDuzenle.Location = new System.Drawing.Point(3, 486);
             this.btn_islemDuzenle.Name = "btn_islemDuzenle";
             this.btn_islemDuzenle.Size = new System.Drawing.Size(194, 57);
             this.btn_islemDuzenle.TabIndex = 3;
@@ -126,7 +127,7 @@
             this.btn_kasa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_kasa.Font = new System.Drawing.Font("Cambria", 17F);
             this.btn_kasa.ForeColor = System.Drawing.Color.Black;
-            this.btn_kasa.Location = new System.Drawing.Point(3, 300);
+            this.btn_kasa.Location = new System.Drawing.Point(3, 404);
             this.btn_kasa.Name = "btn_kasa";
             this.btn_kasa.Padding = new System.Windows.Forms.Padding(9);
             this.btn_kasa.Size = new System.Drawing.Size(194, 57);
@@ -142,7 +143,7 @@
             this.btn_paracikisisayfa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_paracikisisayfa.Font = new System.Drawing.Font("Cambria", 17F);
             this.btn_paracikisisayfa.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_paracikisisayfa.Location = new System.Drawing.Point(3, 105);
+            this.btn_paracikisisayfa.Location = new System.Drawing.Point(3, 131);
             this.btn_paracikisisayfa.Name = "btn_paracikisisayfa";
             this.btn_paracikisisayfa.Size = new System.Drawing.Size(194, 59);
             this.btn_paracikisisayfa.TabIndex = 2;
@@ -157,7 +158,7 @@
             this.btn_paragirisisayfa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_paragirisisayfa.Font = new System.Drawing.Font("Cambria", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_paragirisisayfa.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_paragirisisayfa.Location = new System.Drawing.Point(3, 40);
+            this.btn_paragirisisayfa.Location = new System.Drawing.Point(3, 46);
             this.btn_paragirisisayfa.Name = "btn_paragirisisayfa";
             this.btn_paragirisisayfa.Size = new System.Drawing.Size(194, 59);
             this.btn_paragirisisayfa.TabIndex = 1;
@@ -167,10 +168,12 @@
             // 
             // hedefPanel
             // 
+            this.hedefPanel.Controls.Add(this.label1);
             this.hedefPanel.Controls.Add(this.pictureBox1);
+            this.hedefPanel.Dock = System.Windows.Forms.DockStyle.Right;
             this.hedefPanel.Location = new System.Drawing.Point(203, 0);
             this.hedefPanel.Name = "hedefPanel";
-            this.hedefPanel.Size = new System.Drawing.Size(706, 425);
+            this.hedefPanel.Size = new System.Drawing.Size(859, 546);
             this.hedefPanel.TabIndex = 3;
             // 
             // pictureBox1
@@ -178,21 +181,32 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(706, 425);
+            this.pictureBox1.Size = new System.Drawing.Size(859, 546);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(636, 522);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(211, 15);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Copyright © 2024, CELAL SAFA AKSU";
             // 
             // anasayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(909, 425);
+            this.ClientSize = new System.Drawing.Size(1062, 546);
             this.Controls.Add(this.hedefPanel);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
+            this.MaximizeBox = false;
             this.Name = "anasayfa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AKSU HALI EVİ";
@@ -200,6 +214,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.hedefPanel.ResumeLayout(false);
+            this.hedefPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -217,5 +232,6 @@
         private System.Windows.Forms.Label lbl_anasayfa;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_islemDuzenle;
+        private System.Windows.Forms.Label label1;
     }
 }

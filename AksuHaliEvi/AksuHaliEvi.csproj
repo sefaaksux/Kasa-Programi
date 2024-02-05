@@ -199,6 +199,10 @@
     <Compile Include="Migrations\20240204222416_mg2RemainderDeleted.designer.cs">
       <DependentUpon>20240204222416_mg2RemainderDeleted.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20240205132955_mg3TurnoverDeleted.cs" />
+    <Compile Include="Migrations\20240205132955_mg3TurnoverDeleted.designer.cs">
+      <DependentUpon>20240205132955_mg3TurnoverDeleted.cs</DependentUpon>
+    </Compile>
     <Compile Include="ParaCikisi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -240,7 +244,6 @@
       <DependentUpon>resimgetir.cs</DependentUpon>
     </Compile>
     <Compile Include="TransactionService.cs" />
-    <Compile Include="Turnover.cs" />
     <Compile Include="User.cs" />
     <Compile Include="UserService.cs" />
     <Compile Include="DuzenleParaGiris.cs">

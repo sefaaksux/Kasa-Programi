@@ -90,6 +90,27 @@ namespace AksuHaliEvi
             dataGridView1.DataSource = query.ToList();
             lbl1.Text = "";
             lbl2.Text = "";
+            txt_arama.Text = "";
+        }
+
+        private void txt_arama_TextChanged(object sender, EventArgs e)
+        {
+            string aranan = txt_arama.Text.ToLower();
+
+            var query = (from income in _context.Incomes
+                         join paymentMethod in _context.PaymentMethods
+                         on income.MethodID equals paymentMethod.MethodID
+                         where income.Description.ToLower().Contains(aranan)
+                         select new
+                         {
+                             income.Amount,
+                             income.Description,
+                             paymentMethod.MethodName,
+                             income.IncomeDate  
+                         }).ToList();
+
+
+            dataGridView1.DataSource = query;
         }
     }
 }
