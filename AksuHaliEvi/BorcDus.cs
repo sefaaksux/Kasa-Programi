@@ -184,10 +184,31 @@ namespace AksuHaliEvi
                 DialogResult result = MessageBox.Show("SİLMEK İSTEDİĞİNİZE EMİN MİSİNİZ?", "SİLME", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)
                 {
-                    _transactionService.DeleteDebt(dataGridView1);
-                    MessageBox.Show("KAYIT SİLİNDİ!","BAŞARILI",MessageBoxButtons.OK,MessageBoxIcon.Information);
-                    kayitlariGetir();
-                    temizle();
+                    DialogResult result2 = MessageBox.Show("PARA GİRİŞ KAYITLARINA EKLENMESİNİ İSTİYOR MUSUNUZ?", "SORU", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                    if (result2 == DialogResult.Yes)
+                    {
+                        decimal tutar =Convert.ToDecimal( txt_tutar.Text);
+                        string isim = txt_isim.Text;
+                        string telno = msk_telNo.Text;
+                        _transactionService.AddIncome(tutar, DateTime.Now, isim + " Kişisinden düşülen borç. TELEFON NO: " + telno, 5);
+                        _transactionService.DeleteDebt(dataGridView1);
+                        MessageBox.Show("KAYIT SİLİNDİ VE PARA GİRİŞ KAYITLARINA EKLENDİ", "BAŞARILI", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        
+                        kayitlariGetir();
+                        temizle();
+                    }
+                    else
+                    {
+                        _transactionService.DeleteDebt(dataGridView1);
+                        MessageBox.Show("KAYIT SİLİNDİ", "BAŞARILI", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        kayitlariGetir();
+                        temizle();
+                    }
+
+
+                    
                 }
                 else
                 {
