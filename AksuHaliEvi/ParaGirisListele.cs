@@ -28,6 +28,7 @@ namespace AksuHaliEvi
             this.dataGridView1.DefaultCellStyle.BackColor = Color.Beige;
             this.dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Yellow;
             this.dataGridView1.DefaultCellStyle.SelectionBackColor = Color.Black;
+            
         }
 
         private void ParaGirisListele_Load(object sender, EventArgs e)
@@ -43,7 +44,9 @@ namespace AksuHaliEvi
                                    };
             dataGridView1.DataSource = query.ToList();
 
-
+            dataGridView1.Columns[0].Width = 110;
+            dataGridView1.Columns[2].Width = 140;
+            dataGridView1.Columns[3].Width = 150;
 
 
 

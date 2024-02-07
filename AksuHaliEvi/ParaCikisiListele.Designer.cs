@@ -49,6 +49,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(0, 223);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(859, 323);
             this.dataGridView1.TabIndex = 0;
             // 
@@ -164,8 +165,9 @@
             this.Controls.Add(this.btn_temizle);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.dataGridView1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "ParaCikisiListele";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ParaCikisiListele";
             this.Load += new System.EventHandler(this.ParaCikisiListele_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

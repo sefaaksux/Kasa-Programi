@@ -73,10 +73,28 @@ namespace AksuHaliEvi
             kasa.Show();
         }
 
+        private void btn_borcGir_Click(object sender, EventArgs e)
+        {
+            BorcGir borcGir = new BorcGir();
+            hedefDegistir(borcGir);
+        }
+
+        private void btn_borcDus_Click(object sender, EventArgs e)
+        {
+            BorcDus borcDus = new BorcDus();
+            hedefDegistir(borcDus);
+        }
+
+        private void btn_borcListele_Click(object sender, EventArgs e)
+        {
+            BorcListele borcListele = new BorcListele();
+            hedefDegistir(borcListele);
+        }
+
         private void btn_islemDuzenle_Click(object sender, EventArgs e)
         {
-            İslemDuzenlemeSecim islemDuzenleme = new İslemDuzenlemeSecim();
-            islemDuzenleme.Show();
+            İslemDuzenlemeSecim islemDuzenlemeSecim = new İslemDuzenlemeSecim();
+            islemDuzenlemeSecim.Show();
         }
     }
 }

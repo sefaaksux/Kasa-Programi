@@ -43,6 +43,11 @@ namespace AksuHaliEvi
                            TARİH = item.ExpenseDate
                         };
             dataGridView1.DataSource = query.ToList();
+
+            dataGridView1.Columns[0].Width = 110;
+            dataGridView1.Columns[2].Width = 140;
+            dataGridView1.Columns[3].Width = 150;
+
         }
 
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)

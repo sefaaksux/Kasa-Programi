@@ -34,13 +34,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btn_paraCikis = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.cmb_odemeYontemi = new System.Windows.Forms.ComboBox();
             this.dtp_tarih = new System.Windows.Forms.DateTimePicker();
             this.txt_aciklama = new System.Windows.Forms.TextBox();
             this.txt_tutar = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.btn_islemlistele = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label5
@@ -93,27 +94,13 @@
             this.btn_paraCikis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_paraCikis.Font = new System.Drawing.Font("Microsoft YaHei", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_paraCikis.ForeColor = System.Drawing.Color.DarkRed;
-            this.btn_paraCikis.Location = new System.Drawing.Point(183, 455);
+            this.btn_paraCikis.Location = new System.Drawing.Point(183, 427);
             this.btn_paraCikis.Name = "btn_paraCikis";
             this.btn_paraCikis.Size = new System.Drawing.Size(506, 41);
-            this.btn_paraCikis.TabIndex = 12;
+            this.btn_paraCikis.TabIndex = 4;
             this.btn_paraCikis.Text = "PARA ÇIKIŞI";
             this.btn_paraCikis.UseVisualStyleBackColor = true;
             this.btn_paraCikis.Click += new System.EventHandler(this.btn_paraCikis_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label1.Font = new System.Drawing.Font("Perpetua Titling MT", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Linen;
-            this.label1.Location = new System.Drawing.Point(326, 27);
-            this.label1.MaximumSize = new System.Drawing.Size(500, 0);
-            this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(8);
-            this.label1.Size = new System.Drawing.Size(221, 50);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "PARA ÇIKIŞI";
             // 
             // cmb_odemeYontemi
             // 
@@ -128,7 +115,7 @@
             this.cmb_odemeYontemi.Location = new System.Drawing.Point(332, 209);
             this.cmb_odemeYontemi.Name = "cmb_odemeYontemi";
             this.cmb_odemeYontemi.Size = new System.Drawing.Size(287, 28);
-            this.cmb_odemeYontemi.TabIndex = 10;
+            this.cmb_odemeYontemi.TabIndex = 2;
             // 
             // dtp_tarih
             // 
@@ -136,7 +123,7 @@
             this.dtp_tarih.Location = new System.Drawing.Point(332, 163);
             this.dtp_tarih.Name = "dtp_tarih";
             this.dtp_tarih.Size = new System.Drawing.Size(287, 27);
-            this.dtp_tarih.TabIndex = 9;
+            this.dtp_tarih.TabIndex = 1;
             // 
             // txt_aciklama
             // 
@@ -145,7 +132,7 @@
             this.txt_aciklama.Multiline = true;
             this.txt_aciklama.Name = "txt_aciklama";
             this.txt_aciklama.Size = new System.Drawing.Size(287, 153);
-            this.txt_aciklama.TabIndex = 8;
+            this.txt_aciklama.TabIndex = 3;
             // 
             // txt_tutar
             // 
@@ -153,7 +140,7 @@
             this.txt_tutar.Location = new System.Drawing.Point(332, 116);
             this.txt_tutar.Name = "txt_tutar";
             this.txt_tutar.Size = new System.Drawing.Size(287, 30);
-            this.txt_tutar.TabIndex = 7;
+            this.txt_tutar.TabIndex = 0;
             // 
             // label6
             // 
@@ -175,20 +162,49 @@
             this.label7.TabIndex = 21;
             this.label7.Text = "Copyright © 2024, CELAL SAFA AKSU";
             // 
+            // btn_islemlistele
+            // 
+            this.btn_islemlistele.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_islemlistele.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_islemlistele.Font = new System.Drawing.Font("Microsoft YaHei", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_islemlistele.ForeColor = System.Drawing.Color.DarkRed;
+            this.btn_islemlistele.Location = new System.Drawing.Point(295, 484);
+            this.btn_islemlistele.Name = "btn_islemlistele";
+            this.btn_islemlistele.Size = new System.Drawing.Size(309, 41);
+            this.btn_islemlistele.TabIndex = 5;
+            this.btn_islemlistele.Text = "İŞLEMLERİ LİSTELE";
+            this.btn_islemlistele.UseVisualStyleBackColor = true;
+            this.btn_islemlistele.Click += new System.EventHandler(this.btn_islemlistele_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.Enabled = false;
+            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(859, 55);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "PARA ÇIKIŞI";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // ParaCikisi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(170)))), ((int)(((byte)(150)))));
             this.ClientSize = new System.Drawing.Size(859, 546);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.btn_islemlistele);
             this.Controls.Add(this.btn_paraCikis);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.cmb_odemeYontemi);
             this.Controls.Add(this.dtp_tarih);
             this.Controls.Add(this.txt_aciklama);
@@ -211,12 +227,13 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btn_paraCikis;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmb_odemeYontemi;
         private System.Windows.Forms.DateTimePicker dtp_tarih;
         private System.Windows.Forms.TextBox txt_aciklama;
         private System.Windows.Forms.TextBox txt_tutar;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btn_islemlistele;
+        private System.Windows.Forms.Button button1;
     }
 }

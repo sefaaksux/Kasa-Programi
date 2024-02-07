@@ -56,7 +56,7 @@
             this.btn_paracikisduzenle.Location = new System.Drawing.Point(305, 75);
             this.btn_paracikisduzenle.Name = "btn_paracikisduzenle";
             this.btn_paracikisduzenle.Size = new System.Drawing.Size(152, 57);
-            this.btn_paracikisduzenle.TabIndex = 0;
+            this.btn_paracikisduzenle.TabIndex = 1;
             this.btn_paracikisduzenle.Text = "PARA ÇIKIŞI";
             this.btn_paracikisduzenle.UseVisualStyleBackColor = false;
             this.btn_paracikisduzenle.Click += new System.EventHandler(this.btn_paracikisduzenle_Click);

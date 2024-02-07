@@ -33,7 +33,6 @@
             this.txt_aciklama = new System.Windows.Forms.TextBox();
             this.dtp_tarih = new System.Windows.Forms.DateTimePicker();
             this.cmb_odemeYontemi = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.btn_paraGiris = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -41,6 +40,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.btn_listele = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txt_tutar
@@ -58,7 +59,7 @@
             this.txt_aciklama.Multiline = true;
             this.txt_aciklama.Name = "txt_aciklama";
             this.txt_aciklama.Size = new System.Drawing.Size(287, 153);
-            this.txt_aciklama.TabIndex = 1;
+            this.txt_aciklama.TabIndex = 3;
             // 
             // dtp_tarih
             // 
@@ -66,7 +67,7 @@
             this.dtp_tarih.Location = new System.Drawing.Point(332, 167);
             this.dtp_tarih.Name = "dtp_tarih";
             this.dtp_tarih.Size = new System.Drawing.Size(287, 27);
-            this.dtp_tarih.TabIndex = 2;
+            this.dtp_tarih.TabIndex = 1;
             // 
             // cmb_odemeYontemi
             // 
@@ -81,24 +82,7 @@
             this.cmb_odemeYontemi.Location = new System.Drawing.Point(332, 209);
             this.cmb_odemeYontemi.Name = "cmb_odemeYontemi";
             this.cmb_odemeYontemi.Size = new System.Drawing.Size(287, 28);
-            this.cmb_odemeYontemi.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Indigo;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Perpetua Titling MT", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label1.ForeColor = System.Drawing.Color.LightYellow;
-            this.label1.Location = new System.Drawing.Point(326, 27);
-            this.label1.Margin = new System.Windows.Forms.Padding(5);
-            this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(8);
-            this.label1.Size = new System.Drawing.Size(224, 52);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "PARA GİRİŞİ";
+            this.cmb_odemeYontemi.TabIndex = 2;
             // 
             // btn_paraGiris
             // 
@@ -106,10 +90,10 @@
             this.btn_paraGiris.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_paraGiris.Font = new System.Drawing.Font("Microsoft YaHei", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_paraGiris.ForeColor = System.Drawing.Color.DarkBlue;
-            this.btn_paraGiris.Location = new System.Drawing.Point(183, 455);
+            this.btn_paraGiris.Location = new System.Drawing.Point(183, 427);
             this.btn_paraGiris.Name = "btn_paraGiris";
             this.btn_paraGiris.Size = new System.Drawing.Size(506, 41);
-            this.btn_paraGiris.TabIndex = 5;
+            this.btn_paraGiris.TabIndex = 4;
             this.btn_paraGiris.Text = "PARA GİRİŞİ";
             this.btn_paraGiris.UseVisualStyleBackColor = true;
             this.btn_paraGiris.Click += new System.EventHandler(this.btn_paraGiris_Click);
@@ -174,20 +158,49 @@
             this.label7.TabIndex = 20;
             this.label7.Text = "Copyright © 2024, CELAL SAFA AKSU";
             // 
+            // btn_listele
+            // 
+            this.btn_listele.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_listele.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_listele.Font = new System.Drawing.Font("Microsoft YaHei", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_listele.ForeColor = System.Drawing.Color.DarkBlue;
+            this.btn_listele.Location = new System.Drawing.Point(295, 484);
+            this.btn_listele.Name = "btn_listele";
+            this.btn_listele.Size = new System.Drawing.Size(309, 41);
+            this.btn_listele.TabIndex = 5;
+            this.btn_listele.Text = "İŞLEMLERİ LİSTELE";
+            this.btn_listele.UseVisualStyleBackColor = true;
+            this.btn_listele.Click += new System.EventHandler(this.btn_listele_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.PowderBlue;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.Enabled = false;
+            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 20.25F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(859, 55);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "PARA GİRİŞİ";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // ParaGirisi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(169)))), ((int)(((byte)(198)))));
             this.ClientSize = new System.Drawing.Size(859, 546);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.btn_listele);
             this.Controls.Add(this.btn_paraGiris);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.cmb_odemeYontemi);
             this.Controls.Add(this.dtp_tarih);
             this.Controls.Add(this.txt_aciklama);
@@ -209,7 +222,6 @@
         private System.Windows.Forms.TextBox txt_aciklama;
         private System.Windows.Forms.DateTimePicker dtp_tarih;
         private System.Windows.Forms.ComboBox cmb_odemeYontemi;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_paraGiris;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -217,6 +229,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btn_listele;
+        private System.Windows.Forms.Button button1;
     }
 }
 

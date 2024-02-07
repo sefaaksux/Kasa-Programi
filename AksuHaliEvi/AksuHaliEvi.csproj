@@ -168,6 +168,25 @@
     <Compile Include="anasayfa.Designer.cs">
       <DependentUpon>anasayfa.cs</DependentUpon>
     </Compile>
+    <Compile Include="BorcDus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BorcDus.Designer.cs">
+      <DependentUpon>BorcDus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BorcGir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BorcGir.Designer.cs">
+      <DependentUpon>BorcGir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BorcListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BorcListele.Designer.cs">
+      <DependentUpon>BorcListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Debt.cs" />
     <Compile Include="DuzenleParaCikis.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -202,6 +221,14 @@
     <Compile Include="Migrations\20240205132955_mg3TurnoverDeleted.cs" />
     <Compile Include="Migrations\20240205132955_mg3TurnoverDeleted.designer.cs">
       <DependentUpon>20240205132955_mg3TurnoverDeleted.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20240207141231_mg4DebtClassCreated.cs" />
+    <Compile Include="Migrations\20240207141231_mg4DebtClassCreated.designer.cs">
+      <DependentUpon>20240207141231_mg4DebtClassCreated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20240207154802_mg5AddedPhoneForDebt.cs" />
+    <Compile Include="Migrations\20240207154802_mg5AddedPhoneForDebt.designer.cs">
+      <DependentUpon>20240207154802_mg5AddedPhoneForDebt.cs</DependentUpon>
     </Compile>
     <Compile Include="ParaCikisi.cs">
       <SubType>Form</SubType>
@@ -260,6 +287,15 @@
     </Compile>
     <EmbeddedResource Include="anasayfa.resx">
       <DependentUpon>anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BorcDus.resx">
+      <DependentUpon>BorcDus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BorcGir.resx">
+      <DependentUpon>BorcGir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BorcListele.resx">
+      <DependentUpon>BorcListele.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DuzenleParaCikis.resx">
       <DependentUpon>DuzenleParaCikis.cs</DependentUpon>

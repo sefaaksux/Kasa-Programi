@@ -55,11 +55,12 @@
             "KREDİ KARTI",
             "NAKİT",
             "FİRMADAN ÇEKİŞ",
-            "SENET TAHSİL"});
+            "SENET TAHSİL",
+            "BORÇTAN DÜŞÜLEN"});
             this.cmb_odemeYontemi.Location = new System.Drawing.Point(655, 102);
             this.cmb_odemeYontemi.Name = "cmb_odemeYontemi";
             this.cmb_odemeYontemi.Size = new System.Drawing.Size(252, 26);
-            this.cmb_odemeYontemi.TabIndex = 27;
+            this.cmb_odemeYontemi.TabIndex = 2;
             // 
             // dtp_tarih
             // 
@@ -67,7 +68,7 @@
             this.dtp_tarih.Location = new System.Drawing.Point(655, 67);
             this.dtp_tarih.Name = "dtp_tarih";
             this.dtp_tarih.Size = new System.Drawing.Size(252, 24);
-            this.dtp_tarih.TabIndex = 26;
+            this.dtp_tarih.TabIndex = 1;
             // 
             // btn_guncelle
             // 
@@ -77,7 +78,7 @@
             this.btn_guncelle.Location = new System.Drawing.Point(506, 297);
             this.btn_guncelle.Name = "btn_guncelle";
             this.btn_guncelle.Size = new System.Drawing.Size(401, 43);
-            this.btn_guncelle.TabIndex = 24;
+            this.btn_guncelle.TabIndex = 4;
             this.btn_guncelle.Text = "GÜNCELLE";
             this.btn_guncelle.UseVisualStyleBackColor = false;
             this.btn_guncelle.Click += new System.EventHandler(this.btn_guncelle_Click);
@@ -90,7 +91,7 @@
             this.btn_sil.Location = new System.Drawing.Point(506, 346);
             this.btn_sil.Name = "btn_sil";
             this.btn_sil.Size = new System.Drawing.Size(401, 43);
-            this.btn_sil.TabIndex = 25;
+            this.btn_sil.TabIndex = 5;
             this.btn_sil.Text = "SİL";
             this.btn_sil.UseVisualStyleBackColor = false;
             this.btn_sil.Click += new System.EventHandler(this.btn_sil_Click);
@@ -142,7 +143,7 @@
             this.txt_aciklama.Multiline = true;
             this.txt_aciklama.Name = "txt_aciklama";
             this.txt_aciklama.Size = new System.Drawing.Size(252, 120);
-            this.txt_aciklama.TabIndex = 18;
+            this.txt_aciklama.TabIndex = 3;
             // 
             // txt_tutar
             // 
@@ -150,7 +151,7 @@
             this.txt_tutar.Location = new System.Drawing.Point(655, 29);
             this.txt_tutar.Name = "txt_tutar";
             this.txt_tutar.Size = new System.Drawing.Size(252, 24);
-            this.txt_tutar.TabIndex = 19;
+            this.txt_tutar.TabIndex = 0;
             // 
             // dataGridView1
             // 
@@ -181,7 +182,7 @@
             this.btn_temizle.Location = new System.Drawing.Point(374, 11);
             this.btn_temizle.Name = "btn_temizle";
             this.btn_temizle.Size = new System.Drawing.Size(73, 24);
-            this.btn_temizle.TabIndex = 30;
+            this.btn_temizle.TabIndex = 7;
             this.btn_temizle.Text = "TEMİZLE";
             this.btn_temizle.UseVisualStyleBackColor = false;
             this.btn_temizle.Click += new System.EventHandler(this.btn_temizle_Click);
@@ -202,7 +203,7 @@
             this.txt_ara.Location = new System.Drawing.Point(182, 12);
             this.txt_ara.Name = "txt_ara";
             this.txt_ara.Size = new System.Drawing.Size(184, 23);
-            this.txt_ara.TabIndex = 28;
+            this.txt_ara.TabIndex = 6;
             this.txt_ara.TextChanged += new System.EventHandler(this.txt_ara_TextChanged);
             this.txt_ara.Enter += new System.EventHandler(this.txt_ara_Enter);
             // 

@@ -99,3 +99,6 @@ C:\Users\AKSU\Desktop\AksuHaliEvi\AksuHaliEvi\obj\Debug\AksuHaliEvi.resimgetir.r
 C:\Users\AKSU\Desktop\AksuHaliEvi\AksuHaliEvi\obj\Debug\AksuHaliEvi.DuzenleParaCikis.resources
 C:\Users\AKSU\Desktop\AksuHaliEvi\AksuHaliEvi\obj\Debug\AksuHaliEvi.DuzenleParaGiris.resources
 C:\Users\AKSU\Desktop\AksuHaliEvi\AksuHaliEvi\obj\Debug\AksuHaliEvi.İslemDuzenlemeSecim.resources
+C:\Users\AKSU\Desktop\AksuHaliEvi\AksuHaliEvi\obj\Debug\AksuHaliEvi.BorcGir.resources
+C:\Users\AKSU\Desktop\AksuHaliEvi\AksuHaliEvi\obj\Debug\AksuHaliEvi.BorcListele.resources
+C:\Users\AKSU\Desktop\AksuHaliEvi\AksuHaliEvi\obj\Debug\AksuHaliEvi.BorcDus.resources

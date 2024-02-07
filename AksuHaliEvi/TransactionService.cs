@@ -96,11 +96,112 @@ namespace AksuHaliEvi
             };
 
             _context.Incomes.Add(income);
-            _context.SaveChanges();
+            
 
-           
-            _context.SaveChanges();
+        }
 
+        public bool DownDebt(DataGridView dataGrid,decimal tutar)
+        {
+            DataGridViewRow product = dataGrid.SelectedRows[0];
+            int secilenID =(int)product.Cells["ID"].Value;
+
+            var myProduct = _context.Debts.FirstOrDefault(x => x.DebtID == secilenID);
+
+            if (myProduct != null)
+            { 
+                if(tutar > myProduct.Amount)
+                {
+                    MessageBox.Show("Borçtan daha yüksek bir rakam girdiniz !");
+                   return false;
+                }
+                else
+                {
+                    myProduct.Amount -= tutar;
+
+                    if(myProduct.Amount <= 0)
+                    {
+                        _context.Debts.Remove(myProduct);
+                        MessageBox.Show("BORÇ SIFIRLANDI, KAYIT SİLİNDİ.");
+                    }
+
+
+                    return true;
+                }                        
+            }
+            return false;
+        }
+
+        public void DeleteDebt(DataGridView dataGrid)
+        {
+            if (dataGrid.SelectedRows.Count > 0)
+            {
+                DataGridViewRow product = dataGrid.SelectedRows[0];
+                if (product.Cells["ID"].Value != null)
+                {
+                    int secilenID = (int)product.Cells["ID"].Value;
+
+                    var silinecek = _context.Debts.FirstOrDefault(x => x.DebtID == secilenID);
+
+                    _context.Debts.Remove(silinecek);
+
+                    _context.SaveChanges();
+
+
+                }
+            }
+        }
+
+        public void UpdateDebt(DataGridView dataGrid, string name, decimal amount, DateTime date, string description, string phone)
+        {
+            
+            if (dataGrid.SelectedRows.Count > 0)
+            {
+                DataGridViewRow product = dataGrid.SelectedRows[0];
+                if (product.Cells["ID"].Value != null)
+                {
+                    int secilenID = (int)product.Cells["ID"].Value;
+
+                    var myProduct = _context.Debts.FirstOrDefault(x => x.DebtID == secilenID);
+
+                    if (myProduct != null)
+                    {
+                        myProduct.Amount = amount;
+                        myProduct.Name = name;
+                        myProduct.Description = description;
+                        myProduct.Phone = phone;
+                        myProduct.Date = date;
+
+                        _context.SaveChanges(); // Değişiklikleri veritabanına kaydet
+                    }
+                    else
+                    {
+                        MessageBox.Show("Seçilen borç bulunamadı.");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Seçilen satırın bir ID değeri yok.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Güncellenecek bir satır seçilmedi.");
+            }
+
+        }
+
+        public void AddDebt(string name, decimal amount, DateTime date, string description,string phone)
+        {
+            var Debt = new Debt
+            {
+                Name = name,
+                Amount = amount,
+                Date = date,
+                Description = description,
+                Phone = phone            
+            };
+
+            _context.Debts.Add(Debt);        
         }
 
         public void AddExpense(decimal amount, DateTime expenseDate, string description, int methodId)
@@ -114,9 +215,8 @@ namespace AksuHaliEvi
             };
 
             _context.Expenses.Add(expense);
-            _context.SaveChanges();
+           
 
-            _context.SaveChanges();
         }
     }
 

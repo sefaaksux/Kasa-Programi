@@ -79,5 +79,12 @@ namespace AksuHaliEvi
         {
             cmb_odemeYontemi.SelectedIndex = 0;
         }
+
+        private void btn_islemlistele_Click(object sender, EventArgs e)
+        {
+            ParaCikisiListele paraCikisiListele = new ParaCikisiListele();
+            paraCikisiListele.Show();
+
+        }
     }
 }
