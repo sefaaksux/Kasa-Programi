@@ -119,5 +119,44 @@ namespace AksuHaliEvi
                 dtp_tarih.Value = DateTime.Now;
             }
         }
+
+        private void txt_ara_TextChanged(object sender, EventArgs e)
+        {
+            string aranan = txt_ara.Text.ToLower();
+
+            var query = from item in _context.Expenses
+                        join mymethot in _context.PaymentMethods
+                        on item.MethodID equals mymethot.MethodID
+                        where item.Description.ToLower().Contains(aranan)
+                        select new
+                        {
+                            ID = item.ExpenseID,
+                            TUTAR = item.Amount,
+                            AÇIKLAMA = item.Description,
+                            ÖDEMEYÖNTEMİ = mymethot.MethodName,
+                            TARİH = item.ExpenseDate
+                        };
+
+            dataGridView1.DataSource = query.ToList();
+        }
+
+        private void temizle()
+        {
+            txt_ara.Text = "";
+            txt_tutar.Text = "";
+            txt_aciklama.Text = "";
+            dtp_tarih.Value = DateTime.Now;
+            cmb_odemeYontemi.SelectedIndex = 0;
+        }
+
+        private void btn_temizle_Click(object sender, EventArgs e)
+        {
+            temizle();
+        }
+
+        private void txt_ara_Enter(object sender, EventArgs e)
+        {
+            temizle();
+        }
     }
 }
