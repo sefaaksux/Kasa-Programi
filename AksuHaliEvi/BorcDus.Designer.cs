@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BorcDus));
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btn_temizle = new System.Windows.Forms.Button();
@@ -51,6 +52,7 @@
             this.txt_isim = new System.Windows.Forms.TextBox();
             this.btn_duzenle = new System.Windows.Forms.Button();
             this.btn_sil = new System.Windows.Forms.Button();
+            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -64,7 +66,7 @@
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(0, 0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(859, 55);
+            this.button1.Size = new System.Drawing.Size(917, 55);
             this.button1.TabIndex = 43;
             this.button1.Text = "BORÇ DÜŞ";
             this.button1.UseVisualStyleBackColor = false;
@@ -75,8 +77,10 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(0, 93);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(859, 152);
+            this.dataGridView1.Size = new System.Drawing.Size(917, 213);
             this.dataGridView1.TabIndex = 44;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -86,7 +90,7 @@
             this.btn_temizle.BackColor = System.Drawing.Color.Brown;
             this.btn_temizle.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_temizle.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_temizle.Location = new System.Drawing.Point(313, 55);
+            this.btn_temizle.Location = new System.Drawing.Point(419, 54);
             this.btn_temizle.Name = "btn_temizle";
             this.btn_temizle.Size = new System.Drawing.Size(129, 36);
             this.btn_temizle.TabIndex = 9;
@@ -100,7 +104,7 @@
             this.txt_aranan.Location = new System.Drawing.Point(150, 57);
             this.txt_aranan.Multiline = true;
             this.txt_aranan.Name = "txt_aranan";
-            this.txt_aranan.Size = new System.Drawing.Size(157, 30);
+            this.txt_aranan.Size = new System.Drawing.Size(246, 30);
             this.txt_aranan.TabIndex = 8;
             this.txt_aranan.TextChanged += new System.EventHandler(this.txt_aranan_TextChanged);
             // 
@@ -121,7 +125,7 @@
             // msk_telNo
             // 
             this.msk_telNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.msk_telNo.Location = new System.Drawing.Point(211, 343);
+            this.msk_telNo.Location = new System.Drawing.Point(224, 418);
             this.msk_telNo.Mask = "(999) 000-0000";
             this.msk_telNo.Name = "msk_telNo";
             this.msk_telNo.Size = new System.Drawing.Size(209, 27);
@@ -131,7 +135,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(426, 302);
+            this.label5.Location = new System.Drawing.Point(439, 377);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(26, 29);
             this.label5.TabIndex = 69;
@@ -141,7 +145,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(749, 257);
+            this.label2.Location = new System.Drawing.Point(762, 332);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(32, 36);
             this.label2.TabIndex = 70;
@@ -150,7 +154,7 @@
             // txt_dusulecekTutar
             // 
             this.txt_dusulecekTutar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txt_dusulecekTutar.Location = new System.Drawing.Point(609, 257);
+            this.txt_dusulecekTutar.Location = new System.Drawing.Point(622, 332);
             this.txt_dusulecekTutar.Name = "txt_dusulecekTutar";
             this.txt_dusulecekTutar.Size = new System.Drawing.Size(134, 30);
             this.txt_dusulecekTutar.TabIndex = 62;
@@ -161,9 +165,12 @@
             this.btn_dus.BackColor = System.Drawing.Color.CadetBlue;
             this.btn_dus.Font = new System.Drawing.Font("Microsoft YaHei", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_dus.ForeColor = System.Drawing.Color.Black;
-            this.btn_dus.Location = new System.Drawing.Point(609, 296);
+            this.btn_dus.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_dus.ImageKey = "debtDown.png";
+            this.btn_dus.ImageList = this.ımageList1;
+            this.btn_dus.Location = new System.Drawing.Point(622, 371);
             this.btn_dus.Name = "btn_dus";
-            this.btn_dus.Size = new System.Drawing.Size(238, 42);
+            this.btn_dus.Size = new System.Drawing.Size(242, 58);
             this.btn_dus.TabIndex = 63;
             this.btn_dus.Text = "DÜŞ";
             this.btn_dus.UseVisualStyleBackColor = false;
@@ -172,7 +179,7 @@
             // dtp_tarih
             // 
             this.dtp_tarih.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dtp_tarih.Location = new System.Drawing.Point(211, 386);
+            this.dtp_tarih.Location = new System.Drawing.Point(224, 461);
             this.dtp_tarih.Name = "dtp_tarih";
             this.dtp_tarih.Size = new System.Drawing.Size(324, 29);
             this.dtp_tarih.TabIndex = 60;
@@ -182,7 +189,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(76, 425);
+            this.label6.Location = new System.Drawing.Point(89, 500);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(124, 25);
             this.label6.TabIndex = 64;
@@ -193,7 +200,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(118, 386);
+            this.label4.Location = new System.Drawing.Point(131, 461);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(76, 25);
             this.label4.TabIndex = 65;
@@ -204,7 +211,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(109, 304);
+            this.label1.Location = new System.Drawing.Point(122, 379);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(84, 25);
             this.label1.TabIndex = 66;
@@ -215,7 +222,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(101, 347);
+            this.label8.Location = new System.Drawing.Point(114, 422);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(90, 25);
             this.label8.TabIndex = 67;
@@ -226,7 +233,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(143, 261);
+            this.label3.Location = new System.Drawing.Point(156, 336);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 25);
             this.label3.TabIndex = 68;
@@ -235,7 +242,7 @@
             // txt_aciklama
             // 
             this.txt_aciklama.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txt_aciklama.Location = new System.Drawing.Point(211, 426);
+            this.txt_aciklama.Location = new System.Drawing.Point(224, 501);
             this.txt_aciklama.Multiline = true;
             this.txt_aciklama.Name = "txt_aciklama";
             this.txt_aciklama.Size = new System.Drawing.Size(324, 99);
@@ -244,7 +251,7 @@
             // txt_tutar
             // 
             this.txt_tutar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txt_tutar.Location = new System.Drawing.Point(211, 302);
+            this.txt_tutar.Location = new System.Drawing.Point(224, 377);
             this.txt_tutar.Name = "txt_tutar";
             this.txt_tutar.Size = new System.Drawing.Size(209, 27);
             this.txt_tutar.TabIndex = 58;
@@ -252,7 +259,7 @@
             // txt_isim
             // 
             this.txt_isim.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txt_isim.Location = new System.Drawing.Point(211, 258);
+            this.txt_isim.Location = new System.Drawing.Point(224, 333);
             this.txt_isim.Name = "txt_isim";
             this.txt_isim.Size = new System.Drawing.Size(241, 27);
             this.txt_isim.TabIndex = 57;
@@ -262,9 +269,12 @@
             this.btn_duzenle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btn_duzenle.Font = new System.Drawing.Font("Microsoft YaHei", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_duzenle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btn_duzenle.Location = new System.Drawing.Point(574, 408);
+            this.btn_duzenle.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_duzenle.ImageKey = "update.png";
+            this.btn_duzenle.ImageList = this.ımageList1;
+            this.btn_duzenle.Location = new System.Drawing.Point(587, 483);
             this.btn_duzenle.Name = "btn_duzenle";
-            this.btn_duzenle.Size = new System.Drawing.Size(238, 42);
+            this.btn_duzenle.Size = new System.Drawing.Size(248, 54);
             this.btn_duzenle.TabIndex = 63;
             this.btn_duzenle.Text = "DÜZENLE";
             this.btn_duzenle.UseVisualStyleBackColor = false;
@@ -275,19 +285,30 @@
             this.btn_sil.BackColor = System.Drawing.Color.Maroon;
             this.btn_sil.Font = new System.Drawing.Font("Microsoft YaHei", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_sil.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btn_sil.Location = new System.Drawing.Point(574, 468);
+            this.btn_sil.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_sil.ImageKey = "delete.png";
+            this.btn_sil.ImageList = this.ımageList1;
+            this.btn_sil.Location = new System.Drawing.Point(587, 543);
             this.btn_sil.Name = "btn_sil";
-            this.btn_sil.Size = new System.Drawing.Size(238, 42);
+            this.btn_sil.Size = new System.Drawing.Size(248, 57);
             this.btn_sil.TabIndex = 63;
             this.btn_sil.Text = "SİL";
             this.btn_sil.UseVisualStyleBackColor = false;
             this.btn_sil.Click += new System.EventHandler(this.btn_sil_Click);
             // 
+            // ımageList1
+            // 
+            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
+            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.ımageList1.Images.SetKeyName(0, "delete.png");
+            this.ımageList1.Images.SetKeyName(1, "update.png");
+            this.ımageList1.Images.SetKeyName(2, "debtDown.png");
+            // 
             // BorcDus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(859, 546);
+            this.ClientSize = new System.Drawing.Size(917, 640);
             this.Controls.Add(this.msk_telNo);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
@@ -344,5 +365,6 @@
         private System.Windows.Forms.TextBox txt_isim;
         private System.Windows.Forms.Button btn_sil;
         private System.Windows.Forms.Button btn_duzenle;
+        private System.Windows.Forms.ImageList ımageList1;
     }
 }

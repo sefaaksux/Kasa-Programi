@@ -40,17 +40,19 @@
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 59);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 99);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowTemplate.Height = 30;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(859, 487);
+            this.dataGridView1.Size = new System.Drawing.Size(917, 541);
             this.dataGridView1.TabIndex = 0;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 16F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(111, 16);
+            this.label4.Location = new System.Drawing.Point(111, 38);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(182, 29);
             this.label4.TabIndex = 14;
@@ -60,7 +62,7 @@
             // txt_aranan
             // 
             this.txt_aranan.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txt_aranan.Location = new System.Drawing.Point(299, 16);
+            this.txt_aranan.Location = new System.Drawing.Point(299, 38);
             this.txt_aranan.Name = "txt_aranan";
             this.txt_aranan.Size = new System.Drawing.Size(294, 30);
             this.txt_aranan.TabIndex = 15;
@@ -71,7 +73,7 @@
             this.btn_temizle.BackColor = System.Drawing.Color.Brown;
             this.btn_temizle.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_temizle.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_temizle.Location = new System.Drawing.Point(625, 10);
+            this.btn_temizle.Location = new System.Drawing.Point(625, 32);
             this.btn_temizle.Name = "btn_temizle";
             this.btn_temizle.Size = new System.Drawing.Size(164, 39);
             this.btn_temizle.TabIndex = 17;
@@ -83,7 +85,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(859, 546);
+            this.ClientSize = new System.Drawing.Size(917, 640);
             this.Controls.Add(this.btn_temizle);
             this.Controls.Add(this.txt_aranan);
             this.Controls.Add(this.label4);

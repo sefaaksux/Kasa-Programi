@@ -21,11 +21,12 @@ namespace AksuHaliEvi
 
         private void SetFontAndColors()
         {
-            this.dataGridView1.DefaultCellStyle.Font = new Font("Tahoma", 10);
-            this.dataGridView1.DefaultCellStyle.ForeColor = Color.Blue;
+            this.dataGridView1.DefaultCellStyle.Font = new Font("Tahoma", 13);
+            this.dataGridView1.DefaultCellStyle.ForeColor = Color.DarkRed;
             this.dataGridView1.DefaultCellStyle.BackColor = Color.Beige;
             this.dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Yellow;
             this.dataGridView1.DefaultCellStyle.SelectionBackColor = Color.Black;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = this.dataGridView1.DefaultCellStyle;
         }
 
         private void ParaCikisiListele_Load(object sender, EventArgs e)
@@ -40,7 +41,7 @@ namespace AksuHaliEvi
                            TUTAR = item.Amount,
                            AÇIKLAMA =  item.Description,
                            ÖDEMEYÖNTEMİ = mymethot.MethodName,
-                           TARİH = item.ExpenseDate
+                           TARİH = item.ExpenseDate.ToShortDateString()
                         };
             dataGridView1.DataSource = query.ToList();
 
@@ -115,6 +116,11 @@ namespace AksuHaliEvi
 
 
             dataGridView1.DataSource = query;
+        }
+
+        private void lbl1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

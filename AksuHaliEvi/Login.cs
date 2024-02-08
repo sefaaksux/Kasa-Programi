@@ -85,5 +85,14 @@ namespace AksuHaliEvi
         {
 
         }
+
+        private void txt_sifre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter && txt_sifre.Focused)
+            {
+                // Giriş butonunun tıklama işlemi burada gerçekleşiyor.
+                btn_giris.PerformClick();
+            }
+        }
     }
 }

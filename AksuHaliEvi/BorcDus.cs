@@ -38,6 +38,7 @@ namespace AksuHaliEvi
         }
         public void kayitlariGetir()
         {
+            SetFontAndColors();
             var query = from item in _context.Debts
                         select new
                         {
@@ -52,7 +53,7 @@ namespace AksuHaliEvi
         }
         private void SetFontAndColors()
         {
-            this.dataGridView1.DefaultCellStyle.Font = new Font("Tahoma", 10);
+            this.dataGridView1.DefaultCellStyle.Font = new Font("Tahoma", 12);
             this.dataGridView1.DefaultCellStyle.ForeColor = Color.Blue;
             this.dataGridView1.DefaultCellStyle.BackColor = Color.Beige;
             this.dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Yellow;
@@ -60,7 +61,7 @@ namespace AksuHaliEvi
         }
         private void BorcDus_Load(object sender, EventArgs e)
         {
-            SetFontAndColors();
+            
             kayitlariGetir();
         }
 
@@ -122,7 +123,7 @@ namespace AksuHaliEvi
                     bool donenDeger = _transactionService.DownDebt(dataGridView1, tutar);
                     if (donenDeger)
                     {
-                        MessageBox.Show("Borçtan" + tutar +" "+" TL düşüldü ve para girişine eklendi.");
+                        MessageBox.Show("Borçtan " + tutar +" TL düşüldü ve para girişine eklendi.");
                         _transactionService.AddIncome(tutar, DateTime.Now, isim + " Kişisinden düşülen borç. TELEFON NO: " + telno, 5);
                         temizle();
                     }

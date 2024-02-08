@@ -21,11 +21,12 @@ namespace AksuHaliEvi
         }
         private void SetFontAndColors()
         {
-            this.dataGridView1.DefaultCellStyle.Font = new Font("Tahoma", 10);
+            this.dataGridView1.DefaultCellStyle.Font = new Font("Tahoma", 16);
             this.dataGridView1.DefaultCellStyle.ForeColor = Color.Blue;
             this.dataGridView1.DefaultCellStyle.BackColor = Color.Beige;
             this.dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Yellow;
             this.dataGridView1.DefaultCellStyle.SelectionBackColor = Color.Black;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = this.dataGridView1.DefaultCellStyle;
         }
         public class TotalSummary
         {
@@ -36,9 +37,10 @@ namespace AksuHaliEvi
         private void Kasa_Load(object sender, EventArgs e)
         {
              SetFontAndColors();
-
+           
             var query = new TotalSummary
             {
+                
                 ToplamGiris = _context.Incomes.Sum(x => x.Amount),
                 ToplamCikis = _context.Expenses.Sum(x => x.Amount),
                 Fark = Math.Abs(_context.Incomes.Sum(x => x.Amount) - _context.Expenses.Sum(x => x.Amount))

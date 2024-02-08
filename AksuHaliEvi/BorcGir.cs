@@ -64,5 +64,10 @@ namespace AksuHaliEvi
                 }
             }         
         }
+
+        private void BorcGir_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

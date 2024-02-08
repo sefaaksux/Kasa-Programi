@@ -23,11 +23,13 @@ namespace AksuHaliEvi
 
         private void SetFontAndColors()
         {
-            this.dataGridView1.DefaultCellStyle.Font = new Font("Tahoma", 10);
-            this.dataGridView1.DefaultCellStyle.ForeColor = Color.Blue;
-            this.dataGridView1.DefaultCellStyle.BackColor = Color.Beige;
+            this.dataGridView1.DefaultCellStyle.Font = new Font("Tahoma", 13);
+           
+            this.dataGridView1.DefaultCellStyle.ForeColor = Color.Black;
+            this.dataGridView1.DefaultCellStyle.BackColor = Color.CadetBlue;
             this.dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Yellow;
             this.dataGridView1.DefaultCellStyle.SelectionBackColor = Color.Black;
+           
             
         }
 
@@ -40,7 +42,7 @@ namespace AksuHaliEvi
                                            TUTAR = item.Amount,
                                            AÇIKLAMA = item.Description,
                                            ÖDEMEYÖNTEMİ = mymethot.MethodName,
-                                           TARİH = item.IncomeDate
+                                           TARİH = item.IncomeDate.ToShortDateString()
                                    };
             dataGridView1.DataSource = query.ToList();
 

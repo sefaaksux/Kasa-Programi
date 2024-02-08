@@ -96,5 +96,17 @@ namespace AksuHaliEvi
             İslemDuzenlemeSecim islemDuzenlemeSecim = new İslemDuzenlemeSecim();
             islemDuzenlemeSecim.Show();
         }
+
+        private void btn_paragirisListe_Click(object sender, EventArgs e)
+        {
+           ParaGirisListele paraGirisListele = new ParaGirisListele();
+            hedefDegistir(paraGirisListele);
+        }
+
+        private void btn_paracikisListe_Click(object sender, EventArgs e)
+        {
+            ParaCikisiListele paraCikisiListele = new ParaCikisiListele();
+            hedefDegistir(paraCikisiListele);
+        }
     }
 }

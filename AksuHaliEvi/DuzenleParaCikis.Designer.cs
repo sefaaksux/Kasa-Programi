@@ -48,7 +48,7 @@
             // 
             // cmb_odemeYontemi
             // 
-            this.cmb_odemeYontemi.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cmb_odemeYontemi.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cmb_odemeYontemi.FormattingEnabled = true;
             this.cmb_odemeYontemi.Items.AddRange(new object[] {
             "Seçiniz",
@@ -59,15 +59,15 @@
             "BORÇTAN DÜŞÜLEN"});
             this.cmb_odemeYontemi.Location = new System.Drawing.Point(655, 102);
             this.cmb_odemeYontemi.Name = "cmb_odemeYontemi";
-            this.cmb_odemeYontemi.Size = new System.Drawing.Size(252, 26);
+            this.cmb_odemeYontemi.Size = new System.Drawing.Size(252, 28);
             this.cmb_odemeYontemi.TabIndex = 2;
             // 
             // dtp_tarih
             // 
-            this.dtp_tarih.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dtp_tarih.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.dtp_tarih.Location = new System.Drawing.Point(655, 67);
             this.dtp_tarih.Name = "dtp_tarih";
-            this.dtp_tarih.Size = new System.Drawing.Size(252, 24);
+            this.dtp_tarih.Size = new System.Drawing.Size(252, 27);
             this.dtp_tarih.TabIndex = 1;
             // 
             // btn_guncelle
@@ -138,7 +138,7 @@
             // 
             // txt_aciklama
             // 
-            this.txt_aciklama.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txt_aciklama.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txt_aciklama.Location = new System.Drawing.Point(655, 145);
             this.txt_aciklama.Multiline = true;
             this.txt_aciklama.Name = "txt_aciklama";
@@ -147,10 +147,10 @@
             // 
             // txt_tutar
             // 
-            this.txt_tutar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txt_tutar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txt_tutar.Location = new System.Drawing.Point(655, 29);
             this.txt_tutar.Name = "txt_tutar";
-            this.txt_tutar.Size = new System.Drawing.Size(252, 24);
+            this.txt_tutar.Size = new System.Drawing.Size(252, 27);
             this.txt_tutar.TabIndex = 0;
             // 
             // dataGridView1
@@ -160,6 +160,8 @@
             this.dataGridView1.Location = new System.Drawing.Point(0, 41);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowTemplate.Height = 30;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(453, 388);
             this.dataGridView1.TabIndex = 17;

@@ -20,18 +20,18 @@ namespace AksuHaliEvi
         }
         private void SetFontAndColors()
         {
-            this.dataGridView1.DefaultCellStyle.Font = new Font("Tahoma", 10);
+            this.dataGridView1.DefaultCellStyle.Font = new Font("Tahoma", 13);
             this.dataGridView1.DefaultCellStyle.ForeColor = Color.Blue;
             this.dataGridView1.DefaultCellStyle.BackColor = Color.Beige;
             this.dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Yellow;
             this.dataGridView1.DefaultCellStyle.SelectionBackColor = Color.Black;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = this.dataGridView1.DefaultCellStyle;
         }
 
         private void BorcListele_Load(object sender, EventArgs e)
         {
             SetFontAndColors();
             kayitlariGetir();
-            
         }
         public void kayitlariGetir()
         {
@@ -60,17 +60,12 @@ namespace AksuHaliEvi
                             AÇIKLAMA = item.Description,
                             TARİH = item.Date
                         };
-            dataGridView1.DataSource = query.ToList();
-
-            
-
-
+            dataGridView1.DataSource = query.ToList();        
         }
 
         private void btn_temizle_Click(object sender, EventArgs e)
         {
             txt_aranan.Text = "";
-
         }
 
         private void label4_Click(object sender, EventArgs e)
