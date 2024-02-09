@@ -33,18 +33,18 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_anasayfa = new System.Windows.Forms.Label();
             this.btn_borcDus = new System.Windows.Forms.Button();
+            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btn_borcListele = new System.Windows.Forms.Button();
             this.btn_borcGir = new System.Windows.Forms.Button();
             this.btn_islemDuzenle = new System.Windows.Forms.Button();
             this.btn_kasa = new System.Windows.Forms.Button();
+            this.btn_paracikisListe = new System.Windows.Forms.Button();
             this.btn_paracikisisayfa = new System.Windows.Forms.Button();
+            this.btn_paragirisListe = new System.Windows.Forms.Button();
             this.btn_paragirisisayfa = new System.Windows.Forms.Button();
             this.hedefPanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_paragirisListe = new System.Windows.Forms.Button();
-            this.btn_paracikisListe = new System.Windows.Forms.Button();
-            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel1.SuspendLayout();
             this.hedefPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -100,6 +100,19 @@
             this.btn_borcDus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_borcDus.UseVisualStyleBackColor = false;
             this.btn_borcDus.Click += new System.EventHandler(this.btn_borcDus_Click);
+            // 
+            // ımageList1
+            // 
+            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
+            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.ımageList1.Images.SetKeyName(0, "add_icoı.png");
+            this.ımageList1.Images.SetKeyName(1, "trash.png");
+            this.ımageList1.Images.SetKeyName(2, "list.png");
+            this.ımageList1.Images.SetKeyName(3, "delete_ico.png");
+            this.ımageList1.Images.SetKeyName(4, "total.png");
+            this.ımageList1.Images.SetKeyName(5, "debtDown.png");
+            this.ımageList1.Images.SetKeyName(6, "debt.png");
+            this.ımageList1.Images.SetKeyName(7, "edit.png");
             // 
             // btn_borcListele
             // 
@@ -181,6 +194,25 @@
             this.btn_kasa.UseVisualStyleBackColor = false;
             this.btn_kasa.Click += new System.EventHandler(this.btn_kasa_Click);
             // 
+            // btn_paracikisListe
+            // 
+            this.btn_paracikisListe.BackColor = System.Drawing.Color.Crimson;
+            this.btn_paracikisListe.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_paracikisListe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_paracikisListe.Font = new System.Drawing.Font("Cambria", 17F);
+            this.btn_paracikisListe.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_paracikisListe.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.btn_paracikisListe.ImageKey = "list.png";
+            this.btn_paracikisListe.ImageList = this.ımageList1;
+            this.btn_paracikisListe.Location = new System.Drawing.Point(11, 220);
+            this.btn_paracikisListe.Name = "btn_paracikisListe";
+            this.btn_paracikisListe.Size = new System.Drawing.Size(213, 45);
+            this.btn_paracikisListe.TabIndex = 1;
+            this.btn_paracikisListe.Text = "LİSTELE";
+            this.btn_paracikisListe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_paracikisListe.UseVisualStyleBackColor = false;
+            this.btn_paracikisListe.Click += new System.EventHandler(this.btn_paracikisListe_Click);
+            // 
             // btn_paracikisisayfa
             // 
             this.btn_paracikisisayfa.BackColor = System.Drawing.Color.Crimson;
@@ -199,6 +231,25 @@
             this.btn_paracikisisayfa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_paracikisisayfa.UseVisualStyleBackColor = false;
             this.btn_paracikisisayfa.Click += new System.EventHandler(this.btn_paracikisisayfa_Click_1);
+            // 
+            // btn_paragirisListe
+            // 
+            this.btn_paragirisListe.BackColor = System.Drawing.Color.SeaGreen;
+            this.btn_paragirisListe.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_paragirisListe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_paragirisListe.Font = new System.Drawing.Font("Cambria", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_paragirisListe.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_paragirisListe.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_paragirisListe.ImageKey = "list.png";
+            this.btn_paragirisListe.ImageList = this.ımageList1;
+            this.btn_paragirisListe.Location = new System.Drawing.Point(11, 92);
+            this.btn_paragirisListe.Name = "btn_paragirisListe";
+            this.btn_paragirisListe.Size = new System.Drawing.Size(213, 45);
+            this.btn_paragirisListe.TabIndex = 0;
+            this.btn_paragirisListe.Text = "LİSTELE";
+            this.btn_paragirisListe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_paragirisListe.UseVisualStyleBackColor = false;
+            this.btn_paragirisListe.Click += new System.EventHandler(this.btn_paragirisListe_Click);
             // 
             // btn_paragirisisayfa
             // 
@@ -247,57 +298,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(917, 640);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // btn_paragirisListe
-            // 
-            this.btn_paragirisListe.BackColor = System.Drawing.Color.SeaGreen;
-            this.btn_paragirisListe.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_paragirisListe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_paragirisListe.Font = new System.Drawing.Font("Cambria", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_paragirisListe.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_paragirisListe.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_paragirisListe.ImageKey = "list.png";
-            this.btn_paragirisListe.ImageList = this.ımageList1;
-            this.btn_paragirisListe.Location = new System.Drawing.Point(11, 92);
-            this.btn_paragirisListe.Name = "btn_paragirisListe";
-            this.btn_paragirisListe.Size = new System.Drawing.Size(213, 45);
-            this.btn_paragirisListe.TabIndex = 0;
-            this.btn_paragirisListe.Text = "LİSTELE";
-            this.btn_paragirisListe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_paragirisListe.UseVisualStyleBackColor = false;
-            this.btn_paragirisListe.Click += new System.EventHandler(this.btn_paragirisListe_Click);
-            // 
-            // btn_paracikisListe
-            // 
-            this.btn_paracikisListe.BackColor = System.Drawing.Color.Crimson;
-            this.btn_paracikisListe.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_paracikisListe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_paracikisListe.Font = new System.Drawing.Font("Cambria", 17F);
-            this.btn_paracikisListe.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_paracikisListe.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.btn_paracikisListe.ImageKey = "list.png";
-            this.btn_paracikisListe.ImageList = this.ımageList1;
-            this.btn_paracikisListe.Location = new System.Drawing.Point(11, 220);
-            this.btn_paracikisListe.Name = "btn_paracikisListe";
-            this.btn_paracikisListe.Size = new System.Drawing.Size(213, 45);
-            this.btn_paracikisListe.TabIndex = 1;
-            this.btn_paracikisListe.Text = "LİSTELE";
-            this.btn_paracikisListe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_paracikisListe.UseVisualStyleBackColor = false;
-            this.btn_paracikisListe.Click += new System.EventHandler(this.btn_paracikisListe_Click);
-            // 
-            // ımageList1
-            // 
-            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
-            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.ımageList1.Images.SetKeyName(0, "add_icoı.png");
-            this.ımageList1.Images.SetKeyName(1, "trash.png");
-            this.ımageList1.Images.SetKeyName(2, "list.png");
-            this.ımageList1.Images.SetKeyName(3, "delete_ico.png");
-            this.ımageList1.Images.SetKeyName(4, "total.png");
-            this.ımageList1.Images.SetKeyName(5, "debtDown.png");
-            this.ımageList1.Images.SetKeyName(6, "debt.png");
-            this.ımageList1.Images.SetKeyName(7, "edit.png");
             // 
             // anasayfa
             // 
