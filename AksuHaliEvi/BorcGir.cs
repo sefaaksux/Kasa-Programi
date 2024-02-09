@@ -69,5 +69,15 @@ namespace AksuHaliEvi
         {
 
         }
+
+        private void txt_tutar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Girilen karakter bir sayı değilse ve bir kontrol karakteri (Ctrl, Backspace, Delete) değilse
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                // İşlemi engelle
+                e.Handled = true;
+            }
+        }
     }
 }

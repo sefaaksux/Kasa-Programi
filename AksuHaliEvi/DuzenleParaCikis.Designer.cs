@@ -152,6 +152,7 @@
             this.txt_tutar.Name = "txt_tutar";
             this.txt_tutar.Size = new System.Drawing.Size(252, 27);
             this.txt_tutar.TabIndex = 0;
+            this.txt_tutar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_tutar_KeyPress);
             // 
             // dataGridView1
             // 

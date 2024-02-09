@@ -35,6 +35,7 @@
             this.dtp_tarih = new System.Windows.Forms.DateTimePicker();
             this.cmb_odemeYontemi = new System.Windows.Forms.ComboBox();
             this.btn_paraGiris = new System.Windows.Forms.Button();
+            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -42,7 +43,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.SuspendLayout();
             // 
             // txt_tutar
@@ -52,6 +52,7 @@
             this.txt_tutar.Name = "txt_tutar";
             this.txt_tutar.Size = new System.Drawing.Size(287, 33);
             this.txt_tutar.TabIndex = 0;
+            this.txt_tutar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_tutar_KeyPress);
             // 
             // txt_aciklama
             // 
@@ -101,6 +102,12 @@
             this.btn_paraGiris.Text = "PARA GİRİŞİ";
             this.btn_paraGiris.UseVisualStyleBackColor = true;
             this.btn_paraGiris.Click += new System.EventHandler(this.btn_paraGiris_Click);
+            // 
+            // ımageList1
+            // 
+            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
+            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.ımageList1.Images.SetKeyName(0, "paragiris.png");
             // 
             // label2
             // 
@@ -175,12 +182,6 @@
             this.button1.TabIndex = 21;
             this.button1.Text = "PARA GİRİŞİ";
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // ımageList1
-            // 
-            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
-            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.ımageList1.Images.SetKeyName(0, "paragiris.png");
             // 
             // ParaGirisi
             // 

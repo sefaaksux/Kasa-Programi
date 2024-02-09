@@ -114,6 +114,7 @@
             this.txt_tutar.Name = "txt_tutar";
             this.txt_tutar.Size = new System.Drawing.Size(243, 30);
             this.txt_tutar.TabIndex = 1;
+            this.txt_tutar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_tutar_KeyPress);
             // 
             // label1
             // 

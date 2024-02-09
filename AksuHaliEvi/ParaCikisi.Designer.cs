@@ -35,6 +35,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btn_paraCikis = new System.Windows.Forms.Button();
+            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.cmb_odemeYontemi = new System.Windows.Forms.ComboBox();
             this.dtp_tarih = new System.Windows.Forms.DateTimePicker();
             this.txt_aciklama = new System.Windows.Forms.TextBox();
@@ -42,7 +43,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.SuspendLayout();
             // 
             // label5
@@ -106,6 +106,12 @@
             this.btn_paraCikis.UseVisualStyleBackColor = true;
             this.btn_paraCikis.Click += new System.EventHandler(this.btn_paraCikis_Click);
             // 
+            // ımageList1
+            // 
+            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
+            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.ımageList1.Images.SetKeyName(0, "paracikis.png");
+            // 
             // cmb_odemeYontemi
             // 
             this.cmb_odemeYontemi.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -145,6 +151,7 @@
             this.txt_tutar.Name = "txt_tutar";
             this.txt_tutar.Size = new System.Drawing.Size(287, 33);
             this.txt_tutar.TabIndex = 0;
+            this.txt_tutar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_tutar_KeyPress);
             // 
             // label6
             // 
@@ -179,12 +186,6 @@
             this.button1.TabIndex = 22;
             this.button1.Text = "PARA ÇIKIŞI";
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // ımageList1
-            // 
-            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
-            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.ımageList1.Images.SetKeyName(0, "paracikis.png");
             // 
             // ParaCikisi
             // 

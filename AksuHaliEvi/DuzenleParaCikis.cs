@@ -159,5 +159,14 @@ namespace AksuHaliEvi
         {
             temizle();
         }
+
+        private void txt_tutar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                // İşlemi engelle
+                e.Handled = true;
+            }
+        }
     }
 }

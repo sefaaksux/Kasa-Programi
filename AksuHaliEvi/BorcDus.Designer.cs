@@ -41,6 +41,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txt_dusulecekTutar = new System.Windows.Forms.TextBox();
             this.btn_dus = new System.Windows.Forms.Button();
+            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.dtp_tarih = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -52,7 +53,6 @@
             this.txt_isim = new System.Windows.Forms.TextBox();
             this.btn_duzenle = new System.Windows.Forms.Button();
             this.btn_sil = new System.Windows.Forms.Button();
-            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -159,6 +159,8 @@
             this.txt_dusulecekTutar.Size = new System.Drawing.Size(134, 30);
             this.txt_dusulecekTutar.TabIndex = 62;
             this.txt_dusulecekTutar.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt_dusulecekTutar.TextChanged += new System.EventHandler(this.txt_dusulecekTutar_TextChanged);
+            this.txt_dusulecekTutar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_dusulecekTutar_KeyPress);
             // 
             // btn_dus
             // 
@@ -175,6 +177,14 @@
             this.btn_dus.Text = "DÜŞ";
             this.btn_dus.UseVisualStyleBackColor = false;
             this.btn_dus.Click += new System.EventHandler(this.btn_dus_Click_1);
+            // 
+            // ımageList1
+            // 
+            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
+            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.ımageList1.Images.SetKeyName(0, "delete.png");
+            this.ımageList1.Images.SetKeyName(1, "update.png");
+            this.ımageList1.Images.SetKeyName(2, "debtDown.png");
             // 
             // dtp_tarih
             // 
@@ -255,6 +265,7 @@
             this.txt_tutar.Name = "txt_tutar";
             this.txt_tutar.Size = new System.Drawing.Size(209, 27);
             this.txt_tutar.TabIndex = 58;
+            this.txt_tutar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_tutar_KeyPress);
             // 
             // txt_isim
             // 
@@ -295,14 +306,6 @@
             this.btn_sil.Text = "SİL";
             this.btn_sil.UseVisualStyleBackColor = false;
             this.btn_sil.Click += new System.EventHandler(this.btn_sil_Click);
-            // 
-            // ımageList1
-            // 
-            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
-            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.ımageList1.Images.SetKeyName(0, "delete.png");
-            this.ımageList1.Images.SetKeyName(1, "update.png");
-            this.ımageList1.Images.SetKeyName(2, "debtDown.png");
             // 
             // BorcDus
             // 
