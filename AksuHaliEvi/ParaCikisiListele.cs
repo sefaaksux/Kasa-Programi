@@ -108,10 +108,10 @@ namespace AksuHaliEvi
                          where Expense.Description.ToLower().Contains(aranan)
                          select new
                          {
-                             Expense.Amount,
-                             Expense.Description,
-                             paymentMethod.MethodName,
-                             Expense.ExpenseDate
+                             TUTAR = Expense.Amount,
+                             AÇIKLAMA = Expense.Description,
+                             ÖDEMEYÖNTEMİ = paymentMethod.MethodName,
+                             TARİH = Expense.ExpenseDate
                          }).ToList();
 
 

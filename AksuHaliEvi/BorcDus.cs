@@ -123,8 +123,13 @@ namespace AksuHaliEvi
                     bool donenDeger = _transactionService.DownDebt(dataGridView1, tutar);
                     if (donenDeger)
                     {
+                        decimal tutarr = Convert.ToDecimal(txt_dusulecekTutar.Text);
+                        string aciklama = $"{isim} Kişisinden düşülen borç. TELEFON NO: {telno}";
+                        int odemeYontemi = 5;
+                        DateTime tarih = dtp_tarih.Value;
+
                         MessageBox.Show("Borçtan " + tutar +" TL düşüldü ve para girişine eklendi.");
-                        _transactionService.AddIncome(tutar, DateTime.Now, isim + " Kişisinden düşülen borç. TELEFON NO: " + telno, 5);
+                        _transactionService.AddIncome(tutar, DateTime.Now, aciklama, odemeYontemi);
                         temizle();
                     }
                     else

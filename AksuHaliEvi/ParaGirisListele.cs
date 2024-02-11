@@ -36,22 +36,23 @@ namespace AksuHaliEvi
         private void ParaGirisListele_Load(object sender, EventArgs e)
         {
             SetFontAndColors();
-
+                   
             var query = from item in _context.Incomes
-                        join mymethot in _context.PaymentMethods on item.MethodID equals mymethot.MethodID  
-                        select new{
-                                           TUTAR = item.Amount,
-                                           AÇIKLAMA = item.Description,
-                                           ÖDEMEYÖNTEMİ = mymethot.MethodName,
-                                           TARİH = item.IncomeDate.ToShortDateString()
-                                   };
-            dataGridView1.DataSource = query.ToList();
+                        join mymethot in _context.PaymentMethods on item.MethodID equals mymethot.MethodID
+                        select new
+                        {
+                            TUTAR = item.Amount,
+                            AÇIKLAMA = item.Description,
+                            ÖDEMEYÖNTEMİ = mymethot.MethodName,
+                            TARİH = item.IncomeDate.ToShortDateString()
+                        };
 
+            dataGridView1.DataSource = query.ToList();
+            
+            
             dataGridView1.Columns[0].Width = 110;        
             dataGridView1.Columns[2].Width = 140;
-            dataGridView1.Columns[3].Width = 150;
-
-
+            dataGridView1.Columns[3].Width = 150; 
 
         }
 
@@ -109,10 +110,10 @@ namespace AksuHaliEvi
                          where income.Description.ToLower().Contains(aranan)
                          select new
                          {
-                             income.Amount,
-                             income.Description,
-                             paymentMethod.MethodName,
-                             income.IncomeDate  
+                             TUTAR = income.Amount,
+                             AÇIKLAMA = income.Description,
+                             ÖDEMEYÖNTEMİ =paymentMethod.MethodName,
+                             TARİH = income.IncomeDate  
                          }).ToList();
 
 

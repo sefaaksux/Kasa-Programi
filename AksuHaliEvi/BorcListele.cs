@@ -58,6 +58,7 @@ namespace AksuHaliEvi
                             İSİM = item.Name,
                             BORÇ = item.Amount,
                             AÇIKLAMA = item.Description,
+                            TELEFON = item.Phone,
                             TARİH = item.Date
                         };
             dataGridView1.DataSource = query.ToList();        
