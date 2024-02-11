@@ -29,13 +29,14 @@ namespace AksuHaliEvi
             this.dataGridView1.DefaultCellStyle.BackColor = Color.CadetBlue;
             this.dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Yellow;
             this.dataGridView1.DefaultCellStyle.SelectionBackColor = Color.Black;
-           
-            
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = this.dataGridView1.DefaultCellStyle;
+
         }
 
         private void ParaGirisListele_Load(object sender, EventArgs e)
         {
             SetFontAndColors();
+
             var query = from item in _context.Incomes
                         join mymethot in _context.PaymentMethods on item.MethodID equals mymethot.MethodID  
                         select new{
@@ -46,7 +47,7 @@ namespace AksuHaliEvi
                                    };
             dataGridView1.DataSource = query.ToList();
 
-            dataGridView1.Columns[0].Width = 110;
+            dataGridView1.Columns[0].Width = 110;        
             dataGridView1.Columns[2].Width = 140;
             dataGridView1.Columns[3].Width = 150;
 

@@ -159,7 +159,7 @@
             this.txt_dusulecekTutar.Size = new System.Drawing.Size(134, 30);
             this.txt_dusulecekTutar.TabIndex = 62;
             this.txt_dusulecekTutar.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txt_dusulecekTutar.TextChanged += new System.EventHandler(this.txt_dusulecekTutar_TextChanged);
+            
             this.txt_dusulecekTutar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_dusulecekTutar_KeyPress);
             // 
             // btn_dus
