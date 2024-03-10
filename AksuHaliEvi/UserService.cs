@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
-namespace AksuHaliEvi
+namespace KasaProgramı
 {
     public class UserService
     {
@@ -25,9 +26,36 @@ namespace AksuHaliEvi
 
         }
 
+        public bool Register(string userName, string password, string email)
+        {
+            var users = _context.Users.ToList();
+            bool varmi = false;
+            foreach (var user in users)
+            {
+                if (userName == user.UserName)
+                {
+                    MessageBox.Show("Bu kullanıcı adı kullanılmış.", "HATA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    varmi = true;                  
+                    break;
+                    
+                }
+            }
 
-
-
-
+            if (varmi == false)
+            {
+                var newUser = new User
+                {
+                    UserName = userName,
+                    Password = password,
+                    Email = email
+                };
+                _context.Users.Add(newUser);
+                _context.SaveChanges();
+                
+                MessageBox.Show("Yeni kayıt eklendi", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return true;
+            }
+            return false;
+        }
     }
 }

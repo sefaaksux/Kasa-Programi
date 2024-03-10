@@ -1,4 +1,4 @@
-﻿namespace AksuHaliEvi
+﻿namespace KasaProgramı
 {
     partial class ParaCikisiListele
     {
@@ -47,7 +47,7 @@
             this.btn_temizle.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_temizle.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btn_temizle.Location = new System.Drawing.Point(632, 239);
-            this.btn_temizle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_temizle.Margin = new System.Windows.Forms.Padding(4);
             this.btn_temizle.Name = "btn_temizle";
             this.btn_temizle.Size = new System.Drawing.Size(553, 58);
             this.btn_temizle.TabIndex = 5;
@@ -143,7 +143,7 @@
             // 
             this.txt_arama.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txt_arama.Location = new System.Drawing.Point(23, 255);
-            this.txt_arama.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_arama.Margin = new System.Windows.Forms.Padding(4);
             this.txt_arama.Name = "txt_arama";
             this.txt_arama.Size = new System.Drawing.Size(247, 36);
             this.txt_arama.TabIndex = 12;
@@ -155,7 +155,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dataGridView1.Location = new System.Drawing.Point(0, 339);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -178,7 +178,7 @@
             this.Controls.Add(this.btn_temizle);
             this.Controls.Add(this.monthCalendar1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ParaCikisiListele";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PARA ÇIKIŞI";

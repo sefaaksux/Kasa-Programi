@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AksuHaliEvi
+namespace KasaProgramı
 {
-    public partial class resimgetir : Form
+    public partial class ResimGetir : Form
     {
-        public resimgetir()
+        public ResimGetir()
         {
             InitializeComponent();
         }

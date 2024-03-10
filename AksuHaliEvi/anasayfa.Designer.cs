@@ -1,4 +1,4 @@
-﻿namespace AksuHaliEvi
+﻿namespace KasaProgramı
 {
     partial class anasayfa
     {
@@ -65,7 +65,7 @@
             this.panel1.Controls.Add(this.btn_paragirisisayfa);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(316, 788);
             this.panel1.TabIndex = 2;
@@ -95,7 +95,7 @@
             this.btn_borcDus.ImageKey = "debtDown.png";
             this.btn_borcDus.ImageList = this.ımageList1;
             this.btn_borcDus.Location = new System.Drawing.Point(15, 426);
-            this.btn_borcDus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_borcDus.Margin = new System.Windows.Forms.Padding(4);
             this.btn_borcDus.Name = "btn_borcDus";
             this.btn_borcDus.Size = new System.Drawing.Size(284, 70);
             this.btn_borcDus.TabIndex = 3;
@@ -129,7 +129,7 @@
             this.btn_borcListele.ImageKey = "list.png";
             this.btn_borcListele.ImageList = this.ımageList1;
             this.btn_borcListele.Location = new System.Drawing.Point(15, 503);
-            this.btn_borcListele.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_borcListele.Margin = new System.Windows.Forms.Padding(4);
             this.btn_borcListele.Name = "btn_borcListele";
             this.btn_borcListele.Size = new System.Drawing.Size(284, 70);
             this.btn_borcListele.TabIndex = 4;
@@ -150,7 +150,7 @@
             this.btn_borcGir.ImageKey = "debt.png";
             this.btn_borcGir.ImageList = this.ımageList1;
             this.btn_borcGir.Location = new System.Drawing.Point(15, 348);
-            this.btn_borcGir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_borcGir.Margin = new System.Windows.Forms.Padding(4);
             this.btn_borcGir.Name = "btn_borcGir";
             this.btn_borcGir.Size = new System.Drawing.Size(284, 70);
             this.btn_borcGir.TabIndex = 2;
@@ -171,7 +171,7 @@
             this.btn_islemDuzenle.ImageKey = "edit.png";
             this.btn_islemDuzenle.ImageList = this.ımageList1;
             this.btn_islemDuzenle.Location = new System.Drawing.Point(15, 608);
-            this.btn_islemDuzenle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_islemDuzenle.Margin = new System.Windows.Forms.Padding(4);
             this.btn_islemDuzenle.Name = "btn_islemDuzenle";
             this.btn_islemDuzenle.Size = new System.Drawing.Size(284, 70);
             this.btn_islemDuzenle.TabIndex = 5;
@@ -192,7 +192,7 @@
             this.btn_kasa.ImageKey = "total.png";
             this.btn_kasa.ImageList = this.ımageList1;
             this.btn_kasa.Location = new System.Drawing.Point(15, 686);
-            this.btn_kasa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_kasa.Margin = new System.Windows.Forms.Padding(4);
             this.btn_kasa.Name = "btn_kasa";
             this.btn_kasa.Padding = new System.Windows.Forms.Padding(12, 11, 12, 11);
             this.btn_kasa.Size = new System.Drawing.Size(284, 91);
@@ -212,7 +212,7 @@
             this.btn_paracikisListe.ImageKey = "list.png";
             this.btn_paracikisListe.ImageList = this.ımageList1;
             this.btn_paracikisListe.Location = new System.Drawing.Point(15, 271);
-            this.btn_paracikisListe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_paracikisListe.Margin = new System.Windows.Forms.Padding(4);
             this.btn_paracikisListe.Name = "btn_paracikisListe";
             this.btn_paracikisListe.Size = new System.Drawing.Size(284, 55);
             this.btn_paracikisListe.TabIndex = 1;
@@ -232,7 +232,7 @@
             this.btn_paracikisisayfa.ImageKey = "trash.png";
             this.btn_paracikisisayfa.ImageList = this.ımageList1;
             this.btn_paracikisisayfa.Location = new System.Drawing.Point(15, 192);
-            this.btn_paracikisisayfa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_paracikisisayfa.Margin = new System.Windows.Forms.Padding(4);
             this.btn_paracikisisayfa.Name = "btn_paracikisisayfa";
             this.btn_paracikisisayfa.Size = new System.Drawing.Size(284, 73);
             this.btn_paracikisisayfa.TabIndex = 1;
@@ -252,7 +252,7 @@
             this.btn_paragirisListe.ImageKey = "list.png";
             this.btn_paragirisListe.ImageList = this.ımageList1;
             this.btn_paragirisListe.Location = new System.Drawing.Point(15, 113);
-            this.btn_paragirisListe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_paragirisListe.Margin = new System.Windows.Forms.Padding(4);
             this.btn_paragirisListe.Name = "btn_paragirisListe";
             this.btn_paragirisListe.Size = new System.Drawing.Size(284, 55);
             this.btn_paragirisListe.TabIndex = 0;
@@ -272,7 +272,7 @@
             this.btn_paragirisisayfa.ImageKey = "add_icoı.png";
             this.btn_paragirisisayfa.ImageList = this.ımageList1;
             this.btn_paragirisisayfa.Location = new System.Drawing.Point(15, 33);
-            this.btn_paragirisisayfa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_paragirisisayfa.Margin = new System.Windows.Forms.Padding(4);
             this.btn_paragirisisayfa.Name = "btn_paragirisisayfa";
             this.btn_paragirisisayfa.Size = new System.Drawing.Size(284, 73);
             this.btn_paragirisisayfa.TabIndex = 0;
@@ -287,7 +287,7 @@
             this.hedefPanel.Controls.Add(this.pictureBox1);
             this.hedefPanel.Dock = System.Windows.Forms.DockStyle.Right;
             this.hedefPanel.Location = new System.Drawing.Point(324, 0);
-            this.hedefPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.hedefPanel.Margin = new System.Windows.Forms.Padding(4);
             this.hedefPanel.Name = "hedefPanel";
             this.hedefPanel.Size = new System.Drawing.Size(1223, 788);
             this.hedefPanel.TabIndex = 3;
@@ -307,7 +307,7 @@
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1223, 788);
             this.pictureBox1.TabIndex = 0;
@@ -324,11 +324,11 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "anasayfa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AKSU HALI EVİ";
+            this.Text = "KASA";
             this.Load += new System.EventHandler(this.anasayfa_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

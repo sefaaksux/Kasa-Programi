@@ -8,15 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AksuHaliEvi
+namespace KasaProgramı
 {
     public partial class Login : Form
     {
         private readonly UserService _userService;
+        private readonly MyDbContext _myDbContext;
         public Login()
         {
             InitializeComponent();
             _userService = new UserService(new MyDbContext());
+            _myDbContext = new MyDbContext();
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -93,6 +95,13 @@ namespace AksuHaliEvi
                 // Giriş butonunun tıklama işlemi burada gerçekleşiyor.
                 btn_giris.PerformClick();
             }
+        }
+
+        private void lbl_kayit_Click(object sender, EventArgs e)
+        {
+            Kayit kayit = new Kayit(_myDbContext);
+            kayit.Show();
+            this.Hide();
         }
     }
 }

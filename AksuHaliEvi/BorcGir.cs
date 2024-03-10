@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AksuHaliEvi
+namespace KasaProgramı
 {
     public partial class BorcGir : Form
     {
@@ -78,6 +78,11 @@ namespace AksuHaliEvi
                 // İşlemi engelle
                 e.Handled = true;
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AksuHaliEvi
+namespace KasaProgramı
 {
     public class MyDbContext : DbContext
     {
@@ -21,7 +21,7 @@ namespace AksuHaliEvi
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             // Veritabanı bağlantı bilgilerinizi burada belirtin.
-            optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS; Database=AksuHaliEvi; Integrated Security = True");
+            optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS; Database=KasaProgrami; Integrated Security = True");
         }
     }
 

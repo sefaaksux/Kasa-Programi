@@ -1,4 +1,4 @@
-﻿namespace AksuHaliEvi
+﻿namespace KasaProgramı
 {
     partial class BorcGir
     {
@@ -52,9 +52,10 @@
             // dtp_tarih
             // 
             this.dtp_tarih.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dtp_tarih.Location = new System.Drawing.Point(362, 232);
+            this.dtp_tarih.Location = new System.Drawing.Point(483, 286);
+            this.dtp_tarih.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtp_tarih.Name = "dtp_tarih";
-            this.dtp_tarih.Size = new System.Drawing.Size(349, 30);
+            this.dtp_tarih.Size = new System.Drawing.Size(464, 36);
             this.dtp_tarih.TabIndex = 2;
             // 
             // label6
@@ -62,9 +63,10 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(208, 324);
+            this.label6.Location = new System.Drawing.Point(277, 399);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(138, 29);
+            this.label6.Size = new System.Drawing.Size(177, 36);
             this.label6.TabIndex = 30;
             this.label6.Text = "AÇIKLAMA";
             // 
@@ -73,9 +75,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(254, 233);
+            this.label4.Location = new System.Drawing.Point(339, 287);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(89, 29);
+            this.label4.Size = new System.Drawing.Size(110, 36);
             this.label4.TabIndex = 32;
             this.label4.Text = "TARİH";
             // 
@@ -84,35 +87,39 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(273, 138);
+            this.label3.Location = new System.Drawing.Point(364, 170);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 29);
+            this.label3.Size = new System.Drawing.Size(80, 36);
             this.label3.TabIndex = 33;
             this.label3.Text = "İSİM";
             // 
             // txt_aciklama
             // 
             this.txt_aciklama.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txt_aciklama.Location = new System.Drawing.Point(362, 326);
+            this.txt_aciklama.Location = new System.Drawing.Point(483, 401);
+            this.txt_aciklama.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_aciklama.Multiline = true;
             this.txt_aciklama.Name = "txt_aciklama";
-            this.txt_aciklama.Size = new System.Drawing.Size(349, 133);
+            this.txt_aciklama.Size = new System.Drawing.Size(464, 163);
             this.txt_aciklama.TabIndex = 4;
             // 
             // txt_isim
             // 
             this.txt_isim.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txt_isim.Location = new System.Drawing.Point(362, 138);
+            this.txt_isim.Location = new System.Drawing.Point(483, 170);
+            this.txt_isim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_isim.Name = "txt_isim";
-            this.txt_isim.Size = new System.Drawing.Size(243, 30);
+            this.txt_isim.Size = new System.Drawing.Size(323, 36);
             this.txt_isim.TabIndex = 0;
             // 
             // txt_tutar
             // 
             this.txt_tutar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txt_tutar.Location = new System.Drawing.Point(362, 182);
+            this.txt_tutar.Location = new System.Drawing.Point(483, 224);
+            this.txt_tutar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_tutar.Name = "txt_tutar";
-            this.txt_tutar.Size = new System.Drawing.Size(243, 30);
+            this.txt_tutar.Size = new System.Drawing.Size(323, 36);
             this.txt_tutar.TabIndex = 1;
             this.txt_tutar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_tutar_KeyPress);
             // 
@@ -121,9 +128,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(164, 180);
+            this.label1.Location = new System.Drawing.Point(219, 222);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(186, 29);
+            this.label1.Size = new System.Drawing.Size(228, 36);
             this.label1.TabIndex = 33;
             this.label1.Text = "BORÇ TUTARI";
             // 
@@ -135,9 +143,10 @@
             this.btn_kaydet.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_kaydet.ImageKey = "save.png";
             this.btn_kaydet.ImageList = this.ımageList1;
-            this.btn_kaydet.Location = new System.Drawing.Point(233, 493);
+            this.btn_kaydet.Location = new System.Drawing.Point(311, 607);
+            this.btn_kaydet.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_kaydet.Name = "btn_kaydet";
-            this.btn_kaydet.Size = new System.Drawing.Size(466, 58);
+            this.btn_kaydet.Size = new System.Drawing.Size(621, 71);
             this.btn_kaydet.TabIndex = 5;
             this.btn_kaydet.Text = "KAYDET";
             this.btn_kaydet.UseVisualStyleBackColor = false;
@@ -153,9 +162,10 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(694, 605);
+            this.label7.Location = new System.Drawing.Point(925, 745);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(211, 15);
+            this.label7.Size = new System.Drawing.Size(261, 18);
             this.label7.TabIndex = 41;
             this.label7.Text = "Copyright © 2024, CELAL SAFA AKSU";
             // 
@@ -167,20 +177,23 @@
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 20.25F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.BlanchedAlmond;
             this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(917, 55);
+            this.button1.Size = new System.Drawing.Size(1223, 68);
             this.button1.TabIndex = 42;
             this.button1.Text = "BORÇ GİR";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(611, 183);
+            this.label2.Location = new System.Drawing.Point(815, 225);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(26, 29);
+            this.label2.Size = new System.Drawing.Size(31, 33);
             this.label2.TabIndex = 43;
             this.label2.Text = "₺";
             // 
@@ -189,37 +202,40 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(71, 279);
+            this.label5.Location = new System.Drawing.Point(95, 343);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(272, 29);
+            this.label5.Size = new System.Drawing.Size(337, 36);
             this.label5.TabIndex = 33;
             this.label5.Text = "TELEFON NUMARASI";
             // 
             // msk_telNo
             // 
             this.msk_telNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.msk_telNo.Location = new System.Drawing.Point(362, 278);
+            this.msk_telNo.Location = new System.Drawing.Point(483, 342);
+            this.msk_telNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.msk_telNo.Mask = "(999) 000-0000";
             this.msk_telNo.Name = "msk_telNo";
-            this.msk_telNo.Size = new System.Drawing.Size(243, 30);
+            this.msk_telNo.Size = new System.Drawing.Size(323, 36);
             this.msk_telNo.TabIndex = 3;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(668, 60);
+            this.pictureBox1.Location = new System.Drawing.Point(891, 74);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(123, 113);
+            this.pictureBox1.Size = new System.Drawing.Size(164, 139);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 44;
             this.pictureBox1.TabStop = false;
             // 
             // BorcGir
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.ClientSize = new System.Drawing.Size(917, 640);
+            this.ClientSize = new System.Drawing.Size(1223, 788);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.msk_telNo);
             this.Controls.Add(this.label2);
@@ -236,6 +252,7 @@
             this.Controls.Add(this.txt_tutar);
             this.Controls.Add(this.txt_isim);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "BorcGir";
             this.Text = "BORÇ GİR";
             this.Load += new System.EventHandler(this.BorcGir_Load);

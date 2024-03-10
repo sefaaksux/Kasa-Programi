@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AksuHaliEvi
+namespace KasaProgramı
 {
     public partial class anasayfa : Form
     {
@@ -57,14 +57,14 @@ namespace AksuHaliEvi
 
         private void lbl_anasayfa_Click(object sender, EventArgs e)
         {
-            resimgetir resimgetir = new resimgetir();
-            hedefDegistir(resimgetir);
+            ResimGetir resimGetir = new ResimGetir();
+            hedefDegistir(resimGetir);
         }
 
         private void anasayfa_Load(object sender, EventArgs e)
         {
-            resimgetir resimgetir = new resimgetir();
-            hedefDegistir(resimgetir);
+            ResimGetir resimGetir = new ResimGetir();
+            hedefDegistir(resimGetir);
         }
 
         private void btn_kasa_Click(object sender, EventArgs e)

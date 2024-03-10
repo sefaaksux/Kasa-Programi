@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace AksuHaliEvi.Migrations
+namespace KasaProgramı.Migrations
 {
     public partial class mg1RemainderAdded : Migration
     {
