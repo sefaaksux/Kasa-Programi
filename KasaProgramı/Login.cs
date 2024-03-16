@@ -44,25 +44,45 @@ namespace KasaProgramı
 
         private void btn_giris_Click(object sender, EventArgs e)
         {
-            
 
-            string userName = txt_kullaniciadi.Text;
+
+            string username = txt_kullaniciadi.Text;
             string password = txt_sifre.Text;
 
-            
 
-            if(string.IsNullOrEmpty(userName) || string.IsNullOrEmpty(password))
+
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
                 MessageBox.Show("TÜM ALANLARI DOLDURUNUZ !", "HATA");
             }
             else
             {
-                var result = _userService.AuthenticateUser(userName, password);
+                var result = _userService.AuthenticateUser(username, password);
                 if (result)
                 {
-                    anasayfa anasayfa = new anasayfa();
-                    anasayfa.Show();
-                    this.Hide();
+                    var user = _myDbContext.Users.FirstOrDefault(x => x.UserName == username);
+
+                    if (user.Authority == "admin")
+                    {
+                        anasayfa anasayfa = new anasayfa();
+                        anasayfa.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        anasayfa anasayfa = new anasayfa();
+                        anasayfa.btn_paragirisisayfa.Enabled = false;
+                        anasayfa.btn_paracikisisayfa.Enabled = false;
+                        anasayfa.btn_borcGir.Enabled = false;
+                        anasayfa.btn_borcDus.Enabled = false;
+                        anasayfa.btn_islemDuzenle.Enabled = false;
+                        anasayfa.ayarlarMenuItem.Visible = false;
+
+                        anasayfa.Show();
+                        this.Hide();
+                    }
+
+
                 }
                 else
                 {
@@ -70,12 +90,6 @@ namespace KasaProgramı
                 }
 
             }
-
-            
-
-            
-
-
         }
 
         private void lbl_sifreunuttum_Click(object sender, EventArgs e)
@@ -85,7 +99,11 @@ namespace KasaProgramı
 
         private void Login_Load(object sender, EventArgs e)
         {
-
+            bool veriVarMi = _myDbContext.Users.Any();
+            if (veriVarMi)
+            {
+                lbl_kayit.Visible = false;
+            }
         }
 
         private void txt_sifre_KeyPress(object sender, KeyPressEventArgs e)

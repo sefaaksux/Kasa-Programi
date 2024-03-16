@@ -51,7 +51,7 @@ namespace KasaProgramı
         {
             decimal tutar = Convert.ToDecimal(txt_tutar.Text);
             string aciklama = txt_aciklama.Text;
-            int odemeYontemi = cmb_odemeYontemi.SelectedIndex;
+            int odemeYontemi = (int)cmb_odemeYontemi.SelectedValue;
             DateTime date = dtp_tarih.Value;
 
             if (string.IsNullOrEmpty(aciklama) || string.IsNullOrEmpty(tutar.ToString()))
@@ -95,12 +95,24 @@ namespace KasaProgramı
             }
         }
 
+
         private void DuzenleParaCikis_Load(object sender, EventArgs e)
         {
             verileriGetir();
             textleriDoldur();
+            OdemeYontemleriniComboBoxaDoldur();
         }
+        private void OdemeYontemleriniComboBoxaDoldur()
+        {
+            cmb_odemeYontemi.Items.Clear();
 
+            var odemeYontemleri = _context.PaymentMethods.ToList();
+
+
+            cmb_odemeYontemi.DisplayMember = "MethodName";
+            cmb_odemeYontemi.ValueMember = "MethodID";
+            cmb_odemeYontemi.DataSource = odemeYontemleri;
+        }
         private void dataGridView1_CellClick_1(object sender, DataGridViewCellEventArgs e)
         {
             textleriDoldur();

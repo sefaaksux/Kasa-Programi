@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(anasayfa));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lbl_anasayfa = new System.Windows.Forms.Label();
             this.btn_borcDus = new System.Windows.Forms.Button();
             this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btn_borcListele = new System.Windows.Forms.Button();
@@ -42,10 +41,43 @@
             this.btn_paracikisisayfa = new System.Windows.Forms.Button();
             this.btn_paragirisListe = new System.Windows.Forms.Button();
             this.btn_paragirisisayfa = new System.Windows.Forms.Button();
+            this.AYARLAR = new System.Windows.Forms.MenuStrip();
+            this.ayarlarMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.kullanıcıEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.anasayfaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cikisStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.hedefPanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.contentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ındexToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.customizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.printPreviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ödemeYöntemiEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
+            this.AYARLAR.SuspendLayout();
             this.hedefPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -53,7 +85,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.panel1.Controls.Add(this.lbl_anasayfa);
             this.panel1.Controls.Add(this.btn_borcDus);
             this.panel1.Controls.Add(this.btn_borcListele);
             this.panel1.Controls.Add(this.btn_borcGir);
@@ -63,25 +94,12 @@
             this.panel1.Controls.Add(this.btn_paracikisisayfa);
             this.panel1.Controls.Add(this.btn_paragirisListe);
             this.panel1.Controls.Add(this.btn_paragirisisayfa);
+            this.panel1.Controls.Add(this.AYARLAR);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(316, 788);
+            this.panel1.Size = new System.Drawing.Size(237, 640);
             this.panel1.TabIndex = 2;
-            // 
-            // lbl_anasayfa
-            // 
-            this.lbl_anasayfa.AutoSize = true;
-            this.lbl_anasayfa.Font = new System.Drawing.Font("MS Reference Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_anasayfa.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lbl_anasayfa.Location = new System.Drawing.Point(139, 4);
-            this.lbl_anasayfa.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_anasayfa.Name = "lbl_anasayfa";
-            this.lbl_anasayfa.Size = new System.Drawing.Size(111, 22);
-            this.lbl_anasayfa.TabIndex = 7;
-            this.lbl_anasayfa.Text = "ANASAYFA";
-            this.lbl_anasayfa.Click += new System.EventHandler(this.lbl_anasayfa_Click);
             // 
             // btn_borcDus
             // 
@@ -94,10 +112,9 @@
             this.btn_borcDus.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_borcDus.ImageKey = "debtDown.png";
             this.btn_borcDus.ImageList = this.ımageList1;
-            this.btn_borcDus.Location = new System.Drawing.Point(15, 426);
-            this.btn_borcDus.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_borcDus.Location = new System.Drawing.Point(11, 362);
             this.btn_borcDus.Name = "btn_borcDus";
-            this.btn_borcDus.Size = new System.Drawing.Size(284, 70);
+            this.btn_borcDus.Size = new System.Drawing.Size(213, 57);
             this.btn_borcDus.TabIndex = 3;
             this.btn_borcDus.Text = "BORÇ DÜZENLE";
             this.btn_borcDus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -116,6 +133,8 @@
             this.ımageList1.Images.SetKeyName(5, "debtDown.png");
             this.ımageList1.Images.SetKeyName(6, "debt.png");
             this.ımageList1.Images.SetKeyName(7, "edit.png");
+            this.ımageList1.Images.SetKeyName(8, "users.png");
+            this.ımageList1.Images.SetKeyName(9, "home.png");
             // 
             // btn_borcListele
             // 
@@ -124,14 +143,13 @@
             this.btn_borcListele.FlatAppearance.BorderSize = 0;
             this.btn_borcListele.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_borcListele.Font = new System.Drawing.Font("Cambria", 15.5F);
-            this.btn_borcListele.ForeColor = System.Drawing.Color.Black;
+            this.btn_borcListele.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_borcListele.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_borcListele.ImageKey = "list.png";
             this.btn_borcListele.ImageList = this.ımageList1;
-            this.btn_borcListele.Location = new System.Drawing.Point(15, 503);
-            this.btn_borcListele.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_borcListele.Location = new System.Drawing.Point(11, 425);
             this.btn_borcListele.Name = "btn_borcListele";
-            this.btn_borcListele.Size = new System.Drawing.Size(284, 70);
+            this.btn_borcListele.Size = new System.Drawing.Size(213, 57);
             this.btn_borcListele.TabIndex = 4;
             this.btn_borcListele.Text = "BORÇ LİSTELE";
             this.btn_borcListele.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -149,10 +167,9 @@
             this.btn_borcGir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_borcGir.ImageKey = "debt.png";
             this.btn_borcGir.ImageList = this.ımageList1;
-            this.btn_borcGir.Location = new System.Drawing.Point(15, 348);
-            this.btn_borcGir.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_borcGir.Location = new System.Drawing.Point(11, 299);
             this.btn_borcGir.Name = "btn_borcGir";
-            this.btn_borcGir.Size = new System.Drawing.Size(284, 70);
+            this.btn_borcGir.Size = new System.Drawing.Size(213, 57);
             this.btn_borcGir.TabIndex = 2;
             this.btn_borcGir.Text = "BORÇ GİR";
             this.btn_borcGir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -170,10 +187,9 @@
             this.btn_islemDuzenle.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_islemDuzenle.ImageKey = "edit.png";
             this.btn_islemDuzenle.ImageList = this.ımageList1;
-            this.btn_islemDuzenle.Location = new System.Drawing.Point(15, 608);
-            this.btn_islemDuzenle.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_islemDuzenle.Location = new System.Drawing.Point(11, 494);
             this.btn_islemDuzenle.Name = "btn_islemDuzenle";
-            this.btn_islemDuzenle.Size = new System.Drawing.Size(284, 70);
+            this.btn_islemDuzenle.Size = new System.Drawing.Size(213, 57);
             this.btn_islemDuzenle.TabIndex = 5;
             this.btn_islemDuzenle.Text = "İŞLEM DÜZENLE";
             this.btn_islemDuzenle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -191,11 +207,10 @@
             this.btn_kasa.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_kasa.ImageKey = "total.png";
             this.btn_kasa.ImageList = this.ımageList1;
-            this.btn_kasa.Location = new System.Drawing.Point(15, 686);
-            this.btn_kasa.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_kasa.Location = new System.Drawing.Point(11, 557);
             this.btn_kasa.Name = "btn_kasa";
-            this.btn_kasa.Padding = new System.Windows.Forms.Padding(12, 11, 12, 11);
-            this.btn_kasa.Size = new System.Drawing.Size(284, 91);
+            this.btn_kasa.Padding = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.btn_kasa.Size = new System.Drawing.Size(213, 74);
             this.btn_kasa.TabIndex = 6;
             this.btn_kasa.Text = "KASA";
             this.btn_kasa.UseVisualStyleBackColor = false;
@@ -211,10 +226,9 @@
             this.btn_paracikisListe.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
             this.btn_paracikisListe.ImageKey = "list.png";
             this.btn_paracikisListe.ImageList = this.ımageList1;
-            this.btn_paracikisListe.Location = new System.Drawing.Point(15, 271);
-            this.btn_paracikisListe.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_paracikisListe.Location = new System.Drawing.Point(11, 242);
             this.btn_paracikisListe.Name = "btn_paracikisListe";
-            this.btn_paracikisListe.Size = new System.Drawing.Size(284, 55);
+            this.btn_paracikisListe.Size = new System.Drawing.Size(213, 45);
             this.btn_paracikisListe.TabIndex = 1;
             this.btn_paracikisListe.Text = "LİSTELE";
             this.btn_paracikisListe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -231,10 +245,9 @@
             this.btn_paracikisisayfa.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_paracikisisayfa.ImageKey = "trash.png";
             this.btn_paracikisisayfa.ImageList = this.ımageList1;
-            this.btn_paracikisisayfa.Location = new System.Drawing.Point(15, 192);
-            this.btn_paracikisisayfa.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_paracikisisayfa.Location = new System.Drawing.Point(11, 178);
             this.btn_paracikisisayfa.Name = "btn_paracikisisayfa";
-            this.btn_paracikisisayfa.Size = new System.Drawing.Size(284, 73);
+            this.btn_paracikisisayfa.Size = new System.Drawing.Size(213, 59);
             this.btn_paracikisisayfa.TabIndex = 1;
             this.btn_paracikisisayfa.Text = "PARA ÇIKIŞI";
             this.btn_paracikisisayfa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -251,10 +264,9 @@
             this.btn_paragirisListe.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_paragirisListe.ImageKey = "list.png";
             this.btn_paragirisListe.ImageList = this.ımageList1;
-            this.btn_paragirisListe.Location = new System.Drawing.Point(15, 113);
-            this.btn_paragirisListe.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_paragirisListe.Location = new System.Drawing.Point(11, 114);
             this.btn_paragirisListe.Name = "btn_paragirisListe";
-            this.btn_paragirisListe.Size = new System.Drawing.Size(284, 55);
+            this.btn_paragirisListe.Size = new System.Drawing.Size(213, 45);
             this.btn_paragirisListe.TabIndex = 0;
             this.btn_paragirisListe.Text = "LİSTELE";
             this.btn_paragirisListe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -271,35 +283,79 @@
             this.btn_paragirisisayfa.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_paragirisisayfa.ImageKey = "add_icoı.png";
             this.btn_paragirisisayfa.ImageList = this.ımageList1;
-            this.btn_paragirisisayfa.Location = new System.Drawing.Point(15, 33);
-            this.btn_paragirisisayfa.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_paragirisisayfa.Location = new System.Drawing.Point(11, 49);
             this.btn_paragirisisayfa.Name = "btn_paragirisisayfa";
-            this.btn_paragirisisayfa.Size = new System.Drawing.Size(284, 73);
+            this.btn_paragirisisayfa.Size = new System.Drawing.Size(213, 59);
             this.btn_paragirisisayfa.TabIndex = 0;
             this.btn_paragirisisayfa.Text = "PARA GİRİŞİ";
             this.btn_paragirisisayfa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_paragirisisayfa.UseVisualStyleBackColor = false;
             this.btn_paragirisisayfa.Click += new System.EventHandler(this.btn_paragirisisayfa_Click_1);
             // 
+            // AYARLAR
+            // 
+            this.AYARLAR.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.AYARLAR.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.AYARLAR.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ayarlarMenuItem,
+            this.anasayfaToolStripMenuItem,
+            this.cikisStripMenuItem1,
+            this.toolStripMenuItem1});
+            this.AYARLAR.Location = new System.Drawing.Point(0, 0);
+            this.AYARLAR.Name = "AYARLAR";
+            this.AYARLAR.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.AYARLAR.Size = new System.Drawing.Size(237, 27);
+            this.AYARLAR.TabIndex = 10;
+            this.AYARLAR.Text = "menuStrip1";
+            // 
+            // ayarlarMenuItem
+            // 
+            this.ayarlarMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.kullanıcıEkleToolStripMenuItem,
+            this.ödemeYöntemiEkleToolStripMenuItem});
+            this.ayarlarMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.ayarlarMenuItem.Name = "ayarlarMenuItem";
+            this.ayarlarMenuItem.Size = new System.Drawing.Size(68, 24);
+            this.ayarlarMenuItem.Text = "Ayarlar";
+            // 
+            // kullanıcıEkleToolStripMenuItem
+            // 
+            this.kullanıcıEkleToolStripMenuItem.Name = "kullanıcıEkleToolStripMenuItem";
+            this.kullanıcıEkleToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.kullanıcıEkleToolStripMenuItem.Text = "Kullanıcı Ekle";
+            this.kullanıcıEkleToolStripMenuItem.Click += new System.EventHandler(this.kullanıcıEkleToolStripMenuItem_Click);
+            // 
+            // anasayfaToolStripMenuItem
+            // 
+            this.anasayfaToolStripMenuItem.Name = "anasayfaToolStripMenuItem";
+            this.anasayfaToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.anasayfaToolStripMenuItem.Text = "Anasayfa";
+            this.anasayfaToolStripMenuItem.Click += new System.EventHandler(this.anasayfaToolStripMenuItem_Click);
+            // 
+            // cikisStripMenuItem1
+            // 
+            this.cikisStripMenuItem1.Name = "cikisStripMenuItem1";
+            this.cikisStripMenuItem1.Size = new System.Drawing.Size(44, 20);
+            this.cikisStripMenuItem1.Text = "Çıkış";
+            this.cikisStripMenuItem1.Click += new System.EventHandler(this.cikisStripMenuItem1_Click);
+            // 
             // hedefPanel
             // 
             this.hedefPanel.Controls.Add(this.label1);
             this.hedefPanel.Controls.Add(this.pictureBox1);
             this.hedefPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.hedefPanel.Location = new System.Drawing.Point(324, 0);
-            this.hedefPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.hedefPanel.Location = new System.Drawing.Point(243, 0);
             this.hedefPanel.Name = "hedefPanel";
-            this.hedefPanel.Size = new System.Drawing.Size(1223, 788);
+            this.hedefPanel.Size = new System.Drawing.Size(917, 640);
             this.hedefPanel.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(848, 758);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(636, 616);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(261, 18);
+            this.label1.Size = new System.Drawing.Size(211, 15);
             this.label1.TabIndex = 1;
             this.label1.Text = "Copyright © 2024, CELAL SAFA AKSU";
             // 
@@ -307,24 +363,204 @@
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1223, 788);
+            this.pictureBox1.Size = new System.Drawing.Size(917, 640);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // contentsToolStripMenuItem
+            // 
+            this.contentsToolStripMenuItem.Name = "contentsToolStripMenuItem";
+            this.contentsToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.contentsToolStripMenuItem.Text = "&Contents";
+            // 
+            // ındexToolStripMenuItem
+            // 
+            this.ındexToolStripMenuItem.Name = "ındexToolStripMenuItem";
+            this.ındexToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.ındexToolStripMenuItem.Text = "&Index";
+            // 
+            // searchToolStripMenuItem
+            // 
+            this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.searchToolStripMenuItem.Text = "&Search";
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 6);
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.aboutToolStripMenuItem.Text = "&About...";
+            // 
+            // customizeToolStripMenuItem
+            // 
+            this.customizeToolStripMenuItem.Name = "customizeToolStripMenuItem";
+            this.customizeToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.customizeToolStripMenuItem.Text = "&Customize";
+            // 
+            // optionsToolStripMenuItem
+            // 
+            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.optionsToolStripMenuItem.Text = "&Options";
+            // 
+            // undoToolStripMenuItem
+            // 
+            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
+            this.undoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.undoToolStripMenuItem.Text = "&Undo";
+            // 
+            // redoToolStripMenuItem
+            // 
+            this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
+            this.redoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
+            this.redoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.redoToolStripMenuItem.Text = "&Redo";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(221, 6);
+            // 
+            // cutToolStripMenuItem
+            // 
+            this.cutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cutToolStripMenuItem.Image")));
+            this.cutToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
+            this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.cutToolStripMenuItem.Text = "Cu&t";
+            // 
+            // copyToolStripMenuItem
+            // 
+            this.copyToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("copyToolStripMenuItem.Image")));
+            this.copyToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
+            this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.copyToolStripMenuItem.Text = "&Copy";
+            // 
+            // pasteToolStripMenuItem
+            // 
+            this.pasteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("pasteToolStripMenuItem.Image")));
+            this.pasteToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
+            this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.pasteToolStripMenuItem.Text = "&Paste";
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(221, 6);
+            // 
+            // selectAllToolStripMenuItem
+            // 
+            this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
+            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.selectAllToolStripMenuItem.Text = "Select &All";
+            // 
+            // newToolStripMenuItem
+            // 
+            this.newToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripMenuItem.Image")));
+            this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
+            this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.newToolStripMenuItem.Text = "&New";
+            // 
+            // openToolStripMenuItem
+            // 
+            this.openToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem.Image")));
+            this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
+            this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.openToolStripMenuItem.Text = "&Open";
+            // 
+            // toolStripSeparator
+            // 
+            this.toolStripSeparator.Name = "toolStripSeparator";
+            this.toolStripSeparator.Size = new System.Drawing.Size(221, 6);
+            // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripMenuItem.Image")));
+            this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.saveToolStripMenuItem.Text = "&Save";
+            // 
+            // saveAsToolStripMenuItem
+            // 
+            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.saveAsToolStripMenuItem.Text = "Save &As";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(221, 6);
+            // 
+            // printToolStripMenuItem
+            // 
+            this.printToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripMenuItem.Image")));
+            this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
+            this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.printToolStripMenuItem.Text = "&Print";
+            // 
+            // printPreviewToolStripMenuItem
+            // 
+            this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
+            this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
+            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(221, 6);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.exitToolStripMenuItem.Text = "E&xit";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(12, 20);
+            // 
+            // ödemeYöntemiEkleToolStripMenuItem
+            // 
+            this.ödemeYöntemiEkleToolStripMenuItem.Name = "ödemeYöntemiEkleToolStripMenuItem";
+            this.ödemeYöntemiEkleToolStripMenuItem.Size = new System.Drawing.Size(185, 24);
+            this.ödemeYöntemiEkleToolStripMenuItem.Text = "Ödeme Yöntemi";
+            this.ödemeYöntemiEkleToolStripMenuItem.Click += new System.EventHandler(this.ödemeYöntemiEkleToolStripMenuItem_Click);
+            // 
             // anasayfa
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1547, 788);
+            this.ClientSize = new System.Drawing.Size(1160, 640);
             this.Controls.Add(this.hedefPanel);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MainMenuStrip = this.AYARLAR;
             this.MaximizeBox = false;
             this.Name = "anasayfa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -332,6 +568,8 @@
             this.Load += new System.EventHandler(this.anasayfa_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.AYARLAR.ResumeLayout(false);
+            this.AYARLAR.PerformLayout();
             this.hedefPanel.ResumeLayout(false);
             this.hedefPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -343,18 +581,50 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btn_kasa;
-        private System.Windows.Forms.Button btn_paracikisisayfa;
-        private System.Windows.Forms.Button btn_paragirisisayfa;
         private System.Windows.Forms.Panel hedefPanel;
-        private System.Windows.Forms.Label lbl_anasayfa;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btn_islemDuzenle;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btn_borcGir;
-        private System.Windows.Forms.Button btn_borcDus;
         private System.Windows.Forms.Button btn_borcListele;
         private System.Windows.Forms.Button btn_paracikisListe;
         private System.Windows.Forms.Button btn_paragirisListe;
         private System.Windows.Forms.ImageList ımageList1;
+        private System.Windows.Forms.MenuStrip AYARLAR;
+        private System.Windows.Forms.ToolStripMenuItem kullanıcıEkleToolStripMenuItem;
+       
+        private System.Windows.Forms.ToolStripMenuItem contentsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ındexToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem customizeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem undoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem redoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripMenuItem cutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pasteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
+        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saveAsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem printToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem printPreviewToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem anasayfaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cikisStripMenuItem1;
+        public System.Windows.Forms.Button btn_paragirisisayfa;
+        public System.Windows.Forms.Button btn_paracikisisayfa;
+        public System.Windows.Forms.Button btn_islemDuzenle;
+        public System.Windows.Forms.Button btn_borcGir;
+        public System.Windows.Forms.Button btn_borcDus;
+        public System.Windows.Forms.ToolStripMenuItem ayarlarMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem ödemeYöntemiEkleToolStripMenuItem;
     }
 }

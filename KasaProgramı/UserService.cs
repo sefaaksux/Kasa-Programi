@@ -26,7 +26,7 @@ namespace KasaProgramı
 
         }
 
-        public bool Register(string userName, string password, string email)
+        public bool Register(string userName, string password, string email,string authority)
         {
             var users = _context.Users.ToList();
             bool varmi = false;
@@ -47,7 +47,8 @@ namespace KasaProgramı
                 {
                     UserName = userName,
                     Password = password,
-                    Email = email
+                    Email = email,
+                    Authority = authority
                 };
                 _context.Users.Add(newUser);
                 _context.SaveChanges();

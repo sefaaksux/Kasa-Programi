@@ -203,8 +203,14 @@
     <Compile Include="Kayit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Kayit.Designer.cs">
+    <Compile Include="Kayit.designer.cs">
       <DependentUpon>Kayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KayitEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KayitEkle.Designer.cs">
+      <DependentUpon>KayitEkle.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -212,30 +218,11 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\20240202140826_userClassCreated.cs" />
-    <Compile Include="Migrations\20240202140826_userClassCreated.designer.cs">
-      <DependentUpon>20240202140826_userClassCreated.cs</DependentUpon>
+    <Compile Include="Migrations\20240316132105_databaseUpdate.cs" />
+    <Compile Include="Migrations\20240316132105_databaseUpdate.designer.cs">
+      <DependentUpon>20240316132105_databaseUpdate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\20240204221657_mg1RemainderAdded.cs" />
-    <Compile Include="Migrations\20240204221657_mg1RemainderAdded.designer.cs">
-      <DependentUpon>20240204221657_mg1RemainderAdded.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\20240204222416_mg2RemainderDeleted.cs" />
-    <Compile Include="Migrations\20240204222416_mg2RemainderDeleted.designer.cs">
-      <DependentUpon>20240204222416_mg2RemainderDeleted.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\20240205132955_mg3TurnoverDeleted.cs" />
-    <Compile Include="Migrations\20240205132955_mg3TurnoverDeleted.designer.cs">
-      <DependentUpon>20240205132955_mg3TurnoverDeleted.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\20240207141231_mg4DebtClassCreated.cs" />
-    <Compile Include="Migrations\20240207141231_mg4DebtClassCreated.designer.cs">
-      <DependentUpon>20240207141231_mg4DebtClassCreated.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\20240207154802_mg5AddedPhoneForDebt.cs" />
-    <Compile Include="Migrations\20240207154802_mg5AddedPhoneForDebt.designer.cs">
-      <DependentUpon>20240207154802_mg5AddedPhoneForDebt.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Migrations\MyDbContextModelSnapshot.cs" />
     <Compile Include="ParaCikisi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -255,11 +242,6 @@
       <DependentUpon>ParaGirisi.cs</DependentUpon>
     </Compile>
     <Compile Include="Income.cs" />
-    <Compile Include="Migrations\20240202115745_InitialCreate.cs" />
-    <Compile Include="Migrations\20240202115745_InitialCreate.designer.cs">
-      <DependentUpon>20240202115745_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\MyDbContextModelSnapshot.cs" />
     <Compile Include="MyDbContext.cs" />
     <Compile Include="ParaGirisListele.cs">
       <SubType>Form</SubType>
@@ -284,6 +266,12 @@
     </Compile>
     <Compile Include="DuzenleParaGiris.Designer.cs">
       <DependentUpon>DuzenleParaGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OdemeYöntemiEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OdemeYöntemiEkle.Designer.cs">
+      <DependentUpon>OdemeYöntemiEkle.cs</DependentUpon>
     </Compile>
     <Compile Include="İslemDuzenlemeSecim.cs">
       <SubType>Form</SubType>
@@ -311,6 +299,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Kayit.resx">
       <DependentUpon>Kayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KayitEkle.resx">
+      <DependentUpon>KayitEkle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -342,6 +333,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ResimGetir.resx">
       <DependentUpon>ResimGetir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OdemeYöntemiEkle.resx">
+      <DependentUpon>OdemeYöntemiEkle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="İslemDuzenlemeSecim.resx">
       <DependentUpon>İslemDuzenlemeSecim.cs</DependentUpon>

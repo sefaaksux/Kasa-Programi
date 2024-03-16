@@ -42,6 +42,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txt_email = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,7 +94,7 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.checkBox1.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.checkBox1.Location = new System.Drawing.Point(103, 535);
+            this.checkBox1.Location = new System.Drawing.Point(104, 539);
             this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(112, 22);
@@ -109,7 +110,7 @@
             this.btn_kayitol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_kayitol.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_kayitol.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_kayitol.Location = new System.Drawing.Point(101, 580);
+            this.btn_kayitol.Location = new System.Drawing.Point(99, 635);
             this.btn_kayitol.Margin = new System.Windows.Forms.Padding(4);
             this.btn_kayitol.Name = "btn_kayitol";
             this.btn_kayitol.Size = new System.Drawing.Size(371, 55);
@@ -199,11 +200,26 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.Enabled = false;
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.comboBox1.ForeColor = System.Drawing.Color.Black;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "admin"});
+            this.comboBox1.Location = new System.Drawing.Point(104, 579);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(212, 34);
+            this.comboBox1.TabIndex = 17;
+            this.comboBox1.Text = "Seçiniz";
+            // 
             // Kayit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(587, 716);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.txt_sifre2);
             this.Controls.Add(this.label4);
@@ -221,6 +237,7 @@
             this.Name = "Kayit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kayit";
+            this.Load += new System.EventHandler(this.Kayit_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -241,5 +258,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txt_email;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

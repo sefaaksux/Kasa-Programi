@@ -76,11 +76,7 @@
             this.cmb_odemeYontemi.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cmb_odemeYontemi.FormattingEnabled = true;
             this.cmb_odemeYontemi.Items.AddRange(new object[] {
-            "Seçiniz",
-            "KREDİ KARTI",
-            "NAKİT",
-            "FİRMADAN ÇEKİŞ",
-            "SENET TAHSİL"});
+            "Seçiniz"});
             this.cmb_odemeYontemi.Location = new System.Drawing.Point(343, 220);
             this.cmb_odemeYontemi.Name = "cmb_odemeYontemi";
             this.cmb_odemeYontemi.Size = new System.Drawing.Size(287, 37);

@@ -30,8 +30,9 @@ namespace KasaProgramı
                 string userName = txt_kullaniciadi.Text;
                 string email = txt_email.Text;
                 string password = txt_sifre.Text;
+                string authority = comboBox1.SelectedItem.ToString();
                 UserService userService = new UserService(_myDbContext);
-                bool deger = userService.Register(userName, password, email);
+                bool deger = userService.Register(userName, password, email, authority);
                 if(deger == false)
                 {
                     txt_kullaniciadi.Text = "";
@@ -71,6 +72,11 @@ namespace KasaProgramı
                 txt_sifre2.PasswordChar = '*';
                 txt_sifre2.UseSystemPasswordChar = true;
             }
+        }
+
+        private void Kayit_Load(object sender, EventArgs e)
+        {
+            comboBox1.SelectedIndex = 0;
         }
     }
 }

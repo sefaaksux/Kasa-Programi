@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace KasaProgramı
 {
@@ -32,19 +33,28 @@ namespace KasaProgramı
             }
             else
             {
+                if (cmb_odemeYontemi.Items.Count == 0)
+                {
+                    // ComboBox boşsa yapılacak işlemler
+                    MessageBox.Show("Ödeme yöntemleri bulunamadı. Lütfen önce bir ödeme yöntemi ekleyin. (Ayarlar - Ödeme Yöntemleri kısmından ekleyebilirsiniz) )");
+                }
+                else
+                {
+
+                
                 decimal tutar = Convert.ToDecimal(txt_tutar.Text);
                 string aciklama = txt_aciklama.Text;
-                int odemeYontemi = cmb_odemeYontemi.SelectedIndex;
+                int odemeYontemi = (int)cmb_odemeYontemi.SelectedValue;
                 DateTime tarih = dtp_tarih.Value;
-
-                if(odemeYontemi == 0)
+                
+                if (odemeYontemi == 0)
                 {
                     MessageBox.Show("LÜTFEN BİR ÖDEME YÖNTEMİ SEÇİNİZ ! ","ÖDEME YÖNTEMİ",MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
                     DialogResult sonuc = MessageBox.Show("PARA GİRİŞİNİ ONAYLIYOR MUSUNUZ ?", "PARA GİRİŞİ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
+                    
                     if (sonuc == DialogResult.Yes)
                     {
                         // Para Girişi
@@ -60,7 +70,8 @@ namespace KasaProgramı
                     {
                         temizle();
                     }
-                }         
+                 }
+               }         
             }            
         }
 
@@ -82,6 +93,18 @@ namespace KasaProgramı
         private void ParaGirisi_Load(object sender, EventArgs e)
         {
             cmb_odemeYontemi.SelectedIndex = 0;
+            OdemeYontemleriniComboBoxaDoldur();
+        }
+        private void OdemeYontemleriniComboBoxaDoldur()
+        {
+            cmb_odemeYontemi.Items.Clear();
+
+            var odemeYontemleri = _context.PaymentMethods.ToList();
+
+            
+            cmb_odemeYontemi.DisplayMember = "MethodName";
+            cmb_odemeYontemi.ValueMember = "MethodID";
+            cmb_odemeYontemi.DataSource = odemeYontemleri;
         }
 
         private void btn_listele_Click(object sender, EventArgs e)

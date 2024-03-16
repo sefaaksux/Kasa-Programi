@@ -19,7 +19,7 @@ namespace KasaProgramı.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("AksuHaliEvi.Debt", b =>
+            modelBuilder.Entity("KasaProgramı.Debt", b =>
                 {
                     b.Property<int>("DebtID")
                         .ValueGeneratedOnAdd()
@@ -46,7 +46,7 @@ namespace KasaProgramı.Migrations
                     b.ToTable("Debts");
                 });
 
-            modelBuilder.Entity("AksuHaliEvi.Expense", b =>
+            modelBuilder.Entity("KasaProgramı.Expense", b =>
                 {
                     b.Property<int>("ExpenseID")
                         .ValueGeneratedOnAdd()
@@ -75,7 +75,7 @@ namespace KasaProgramı.Migrations
                     b.ToTable("Expenses");
                 });
 
-            modelBuilder.Entity("AksuHaliEvi.Income", b =>
+            modelBuilder.Entity("KasaProgramı.Income", b =>
                 {
                     b.Property<int>("IncomeID")
                         .ValueGeneratedOnAdd()
@@ -104,7 +104,7 @@ namespace KasaProgramı.Migrations
                     b.ToTable("Incomes");
                 });
 
-            modelBuilder.Entity("AksuHaliEvi.PaymentMethod", b =>
+            modelBuilder.Entity("KasaProgramı.PaymentMethod", b =>
                 {
                     b.Property<int>("MethodID")
                         .ValueGeneratedOnAdd()
@@ -119,12 +119,15 @@ namespace KasaProgramı.Migrations
                     b.ToTable("PaymentMethods");
                 });
 
-            modelBuilder.Entity("AksuHaliEvi.User", b =>
+            modelBuilder.Entity("KasaProgramı.User", b =>
                 {
                     b.Property<int>("UserID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Authority")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
@@ -140,16 +143,16 @@ namespace KasaProgramı.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("AksuHaliEvi.Expense", b =>
+            modelBuilder.Entity("KasaProgramı.Expense", b =>
                 {
-                    b.HasOne("AksuHaliEvi.PaymentMethod", "PaymentMethod")
+                    b.HasOne("KasaProgramı.PaymentMethod", "PaymentMethod")
                         .WithMany("Expenses")
                         .HasForeignKey("PaymentMethodMethodID");
                 });
 
-            modelBuilder.Entity("AksuHaliEvi.Income", b =>
+            modelBuilder.Entity("KasaProgramı.Income", b =>
                 {
-                    b.HasOne("AksuHaliEvi.PaymentMethod", "PaymentMethod")
+                    b.HasOne("KasaProgramı.PaymentMethod", "PaymentMethod")
                         .WithMany("Incomes")
                         .HasForeignKey("PaymentMethodMethodID");
                 });

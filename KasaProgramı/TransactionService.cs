@@ -99,6 +99,29 @@ namespace KasaProgramı
             
 
         }
+        public bool AddPaymentMethod(string paymentName)
+        {
+            bool isPaymentAdded = false;
+
+            // Ödeme yöntemi veritabanında zaten var mı kontrol et
+            bool odemeYontemiVarMi = _context.PaymentMethods.Any(p => p.MethodName.ToLower() == paymentName.ToLower());
+
+            if (!odemeYontemiVarMi)
+            {
+                var payment = new PaymentMethod
+                {
+                    MethodName = paymentName,
+                };
+                _context.PaymentMethods.Add(payment);
+                _context.SaveChanges();
+
+                isPaymentAdded = true;
+            }
+
+            return isPaymentAdded;
+        }
+
+
 
         public bool DownDebt(DataGridView dataGrid,decimal tutar)
         {

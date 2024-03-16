@@ -13,6 +13,7 @@ namespace KasaProgramı
 {
     public partial class anasayfa : Form
     {
+        
         public anasayfa()
         {
             InitializeComponent();
@@ -107,6 +108,32 @@ namespace KasaProgramı
         {
             ParaCikisiListele paraCikisiListele = new ParaCikisiListele();
             hedefDegistir(paraCikisiListele);
+        }
+
+        private void kullanıcıEkleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            KayitEkle kayitEkle = new KayitEkle();
+            kayitEkle.Show();
+        }
+
+        private void anasayfaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ResimGetir resimGetir = new ResimGetir();
+            hedefDegistir(resimGetir);
+        }
+
+        private void cikisStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+        }
+
+        private void ödemeYöntemiEkleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OdemeYöntemiEkle odemeYöntemiEkle = new OdemeYöntemiEkle();
+            odemeYöntemiEkle.Show();
+            this.Close();
         }
     }
 }
