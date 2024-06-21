@@ -135,5 +135,10 @@ namespace KasaProgramı
             odemeYöntemiEkle.Show();
             this.Close();
         }
+
+        private void anasayfa_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -44,8 +44,10 @@
             this.AYARLAR = new System.Windows.Forms.MenuStrip();
             this.ayarlarMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kullanıcıEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ödemeYöntemiEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.anasayfaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cikisStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.hedefPanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -74,8 +76,6 @@
             this.printPreviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.ödemeYöntemiEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.AYARLAR.SuspendLayout();
             this.hedefPanel.SuspendLayout();
@@ -97,8 +97,9 @@
             this.panel1.Controls.Add(this.AYARLAR);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(237, 640);
+            this.panel1.Size = new System.Drawing.Size(316, 788);
             this.panel1.TabIndex = 2;
             // 
             // btn_borcDus
@@ -112,9 +113,10 @@
             this.btn_borcDus.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_borcDus.ImageKey = "debtDown.png";
             this.btn_borcDus.ImageList = this.ımageList1;
-            this.btn_borcDus.Location = new System.Drawing.Point(11, 362);
+            this.btn_borcDus.Location = new System.Drawing.Point(15, 446);
+            this.btn_borcDus.Margin = new System.Windows.Forms.Padding(4);
             this.btn_borcDus.Name = "btn_borcDus";
-            this.btn_borcDus.Size = new System.Drawing.Size(213, 57);
+            this.btn_borcDus.Size = new System.Drawing.Size(284, 70);
             this.btn_borcDus.TabIndex = 3;
             this.btn_borcDus.Text = "BORÇ DÜZENLE";
             this.btn_borcDus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -147,9 +149,10 @@
             this.btn_borcListele.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_borcListele.ImageKey = "list.png";
             this.btn_borcListele.ImageList = this.ımageList1;
-            this.btn_borcListele.Location = new System.Drawing.Point(11, 425);
+            this.btn_borcListele.Location = new System.Drawing.Point(15, 523);
+            this.btn_borcListele.Margin = new System.Windows.Forms.Padding(4);
             this.btn_borcListele.Name = "btn_borcListele";
-            this.btn_borcListele.Size = new System.Drawing.Size(213, 57);
+            this.btn_borcListele.Size = new System.Drawing.Size(284, 70);
             this.btn_borcListele.TabIndex = 4;
             this.btn_borcListele.Text = "BORÇ LİSTELE";
             this.btn_borcListele.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -167,9 +170,10 @@
             this.btn_borcGir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_borcGir.ImageKey = "debt.png";
             this.btn_borcGir.ImageList = this.ımageList1;
-            this.btn_borcGir.Location = new System.Drawing.Point(11, 299);
+            this.btn_borcGir.Location = new System.Drawing.Point(15, 368);
+            this.btn_borcGir.Margin = new System.Windows.Forms.Padding(4);
             this.btn_borcGir.Name = "btn_borcGir";
-            this.btn_borcGir.Size = new System.Drawing.Size(213, 57);
+            this.btn_borcGir.Size = new System.Drawing.Size(284, 70);
             this.btn_borcGir.TabIndex = 2;
             this.btn_borcGir.Text = "BORÇ GİR";
             this.btn_borcGir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -187,9 +191,10 @@
             this.btn_islemDuzenle.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_islemDuzenle.ImageKey = "edit.png";
             this.btn_islemDuzenle.ImageList = this.ımageList1;
-            this.btn_islemDuzenle.Location = new System.Drawing.Point(11, 494);
+            this.btn_islemDuzenle.Location = new System.Drawing.Point(15, 608);
+            this.btn_islemDuzenle.Margin = new System.Windows.Forms.Padding(4);
             this.btn_islemDuzenle.Name = "btn_islemDuzenle";
-            this.btn_islemDuzenle.Size = new System.Drawing.Size(213, 57);
+            this.btn_islemDuzenle.Size = new System.Drawing.Size(284, 70);
             this.btn_islemDuzenle.TabIndex = 5;
             this.btn_islemDuzenle.Text = "İŞLEM DÜZENLE";
             this.btn_islemDuzenle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -207,10 +212,11 @@
             this.btn_kasa.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_kasa.ImageKey = "total.png";
             this.btn_kasa.ImageList = this.ımageList1;
-            this.btn_kasa.Location = new System.Drawing.Point(11, 557);
+            this.btn_kasa.Location = new System.Drawing.Point(15, 686);
+            this.btn_kasa.Margin = new System.Windows.Forms.Padding(4);
             this.btn_kasa.Name = "btn_kasa";
-            this.btn_kasa.Padding = new System.Windows.Forms.Padding(9, 9, 9, 9);
-            this.btn_kasa.Size = new System.Drawing.Size(213, 74);
+            this.btn_kasa.Padding = new System.Windows.Forms.Padding(12, 11, 12, 11);
+            this.btn_kasa.Size = new System.Drawing.Size(284, 91);
             this.btn_kasa.TabIndex = 6;
             this.btn_kasa.Text = "KASA";
             this.btn_kasa.UseVisualStyleBackColor = false;
@@ -226,9 +232,10 @@
             this.btn_paracikisListe.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
             this.btn_paracikisListe.ImageKey = "list.png";
             this.btn_paracikisListe.ImageList = this.ımageList1;
-            this.btn_paracikisListe.Location = new System.Drawing.Point(11, 242);
+            this.btn_paracikisListe.Location = new System.Drawing.Point(15, 298);
+            this.btn_paracikisListe.Margin = new System.Windows.Forms.Padding(4);
             this.btn_paracikisListe.Name = "btn_paracikisListe";
-            this.btn_paracikisListe.Size = new System.Drawing.Size(213, 45);
+            this.btn_paracikisListe.Size = new System.Drawing.Size(284, 55);
             this.btn_paracikisListe.TabIndex = 1;
             this.btn_paracikisListe.Text = "LİSTELE";
             this.btn_paracikisListe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -245,9 +252,10 @@
             this.btn_paracikisisayfa.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_paracikisisayfa.ImageKey = "trash.png";
             this.btn_paracikisisayfa.ImageList = this.ımageList1;
-            this.btn_paracikisisayfa.Location = new System.Drawing.Point(11, 178);
+            this.btn_paracikisisayfa.Location = new System.Drawing.Point(15, 219);
+            this.btn_paracikisisayfa.Margin = new System.Windows.Forms.Padding(4);
             this.btn_paracikisisayfa.Name = "btn_paracikisisayfa";
-            this.btn_paracikisisayfa.Size = new System.Drawing.Size(213, 59);
+            this.btn_paracikisisayfa.Size = new System.Drawing.Size(284, 73);
             this.btn_paracikisisayfa.TabIndex = 1;
             this.btn_paracikisisayfa.Text = "PARA ÇIKIŞI";
             this.btn_paracikisisayfa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -264,9 +272,10 @@
             this.btn_paragirisListe.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_paragirisListe.ImageKey = "list.png";
             this.btn_paragirisListe.ImageList = this.ımageList1;
-            this.btn_paragirisListe.Location = new System.Drawing.Point(11, 114);
+            this.btn_paragirisListe.Location = new System.Drawing.Point(15, 140);
+            this.btn_paragirisListe.Margin = new System.Windows.Forms.Padding(4);
             this.btn_paragirisListe.Name = "btn_paragirisListe";
-            this.btn_paragirisListe.Size = new System.Drawing.Size(213, 45);
+            this.btn_paragirisListe.Size = new System.Drawing.Size(284, 55);
             this.btn_paragirisListe.TabIndex = 0;
             this.btn_paragirisListe.Text = "LİSTELE";
             this.btn_paragirisListe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -283,9 +292,10 @@
             this.btn_paragirisisayfa.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_paragirisisayfa.ImageKey = "add_icoı.png";
             this.btn_paragirisisayfa.ImageList = this.ımageList1;
-            this.btn_paragirisisayfa.Location = new System.Drawing.Point(11, 49);
+            this.btn_paragirisisayfa.Location = new System.Drawing.Point(15, 60);
+            this.btn_paragirisisayfa.Margin = new System.Windows.Forms.Padding(4);
             this.btn_paragirisisayfa.Name = "btn_paragirisisayfa";
-            this.btn_paragirisisayfa.Size = new System.Drawing.Size(213, 59);
+            this.btn_paragirisisayfa.Size = new System.Drawing.Size(284, 73);
             this.btn_paragirisisayfa.TabIndex = 0;
             this.btn_paragirisisayfa.Text = "PARA GİRİŞİ";
             this.btn_paragirisisayfa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -303,8 +313,8 @@
             this.toolStripMenuItem1});
             this.AYARLAR.Location = new System.Drawing.Point(0, 0);
             this.AYARLAR.Name = "AYARLAR";
-            this.AYARLAR.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.AYARLAR.Size = new System.Drawing.Size(237, 27);
+            this.AYARLAR.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.AYARLAR.Size = new System.Drawing.Size(316, 31);
             this.AYARLAR.TabIndex = 10;
             this.AYARLAR.Text = "menuStrip1";
             // 
@@ -315,47 +325,61 @@
             this.ödemeYöntemiEkleToolStripMenuItem});
             this.ayarlarMenuItem.ForeColor = System.Drawing.Color.Black;
             this.ayarlarMenuItem.Name = "ayarlarMenuItem";
-            this.ayarlarMenuItem.Size = new System.Drawing.Size(68, 24);
+            this.ayarlarMenuItem.Size = new System.Drawing.Size(77, 27);
             this.ayarlarMenuItem.Text = "Ayarlar";
             // 
             // kullanıcıEkleToolStripMenuItem
             // 
             this.kullanıcıEkleToolStripMenuItem.Name = "kullanıcıEkleToolStripMenuItem";
-            this.kullanıcıEkleToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.kullanıcıEkleToolStripMenuItem.Size = new System.Drawing.Size(217, 28);
             this.kullanıcıEkleToolStripMenuItem.Text = "Kullanıcı Ekle";
             this.kullanıcıEkleToolStripMenuItem.Click += new System.EventHandler(this.kullanıcıEkleToolStripMenuItem_Click);
+            // 
+            // ödemeYöntemiEkleToolStripMenuItem
+            // 
+            this.ödemeYöntemiEkleToolStripMenuItem.Name = "ödemeYöntemiEkleToolStripMenuItem";
+            this.ödemeYöntemiEkleToolStripMenuItem.Size = new System.Drawing.Size(217, 28);
+            this.ödemeYöntemiEkleToolStripMenuItem.Text = "Ödeme Yöntemi";
+            this.ödemeYöntemiEkleToolStripMenuItem.Click += new System.EventHandler(this.ödemeYöntemiEkleToolStripMenuItem_Click);
             // 
             // anasayfaToolStripMenuItem
             // 
             this.anasayfaToolStripMenuItem.Name = "anasayfaToolStripMenuItem";
-            this.anasayfaToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.anasayfaToolStripMenuItem.Size = new System.Drawing.Size(92, 27);
             this.anasayfaToolStripMenuItem.Text = "Anasayfa";
             this.anasayfaToolStripMenuItem.Click += new System.EventHandler(this.anasayfaToolStripMenuItem_Click);
             // 
             // cikisStripMenuItem1
             // 
             this.cikisStripMenuItem1.Name = "cikisStripMenuItem1";
-            this.cikisStripMenuItem1.Size = new System.Drawing.Size(44, 20);
+            this.cikisStripMenuItem1.Size = new System.Drawing.Size(58, 27);
             this.cikisStripMenuItem1.Text = "Çıkış";
             this.cikisStripMenuItem1.Click += new System.EventHandler(this.cikisStripMenuItem1_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(14, 27);
             // 
             // hedefPanel
             // 
             this.hedefPanel.Controls.Add(this.label1);
             this.hedefPanel.Controls.Add(this.pictureBox1);
             this.hedefPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.hedefPanel.Location = new System.Drawing.Point(243, 0);
+            this.hedefPanel.Location = new System.Drawing.Point(324, 0);
+            this.hedefPanel.Margin = new System.Windows.Forms.Padding(4);
             this.hedefPanel.Name = "hedefPanel";
-            this.hedefPanel.Size = new System.Drawing.Size(917, 640);
+            this.hedefPanel.Size = new System.Drawing.Size(1223, 788);
             this.hedefPanel.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(636, 616);
+            this.label1.Location = new System.Drawing.Point(848, 758);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(211, 15);
+            this.label1.Size = new System.Drawing.Size(261, 18);
             this.label1.TabIndex = 1;
             this.label1.Text = "Copyright © 2024, CELAL SAFA AKSU";
             // 
@@ -363,8 +387,9 @@
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(917, 640);
+            this.pictureBox1.Size = new System.Drawing.Size(1223, 788);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -537,34 +562,24 @@
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.exitToolStripMenuItem.Text = "E&xit";
             // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(12, 20);
-            // 
-            // ödemeYöntemiEkleToolStripMenuItem
-            // 
-            this.ödemeYöntemiEkleToolStripMenuItem.Name = "ödemeYöntemiEkleToolStripMenuItem";
-            this.ödemeYöntemiEkleToolStripMenuItem.Size = new System.Drawing.Size(185, 24);
-            this.ödemeYöntemiEkleToolStripMenuItem.Text = "Ödeme Yöntemi";
-            this.ödemeYöntemiEkleToolStripMenuItem.Click += new System.EventHandler(this.ödemeYöntemiEkleToolStripMenuItem_Click);
-            // 
             // anasayfa
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1160, 640);
+            this.ClientSize = new System.Drawing.Size(1547, 788);
             this.Controls.Add(this.hedefPanel);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.AYARLAR;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "anasayfa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "KASA";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.anasayfa_FormClosing);
             this.Load += new System.EventHandler(this.anasayfa_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
