@@ -3,7 +3,10 @@ Bu programı geliştirme amacım, kullanıcıların kolayca gelir-gider yönetim
 Kasa programımıza ilk kayıtta otomatik olarak admin yetkileriyle giriş yapabilirsiniz. Admin kullanıcısı olarak, yeni kayıtlar oluşturabilir, ödeme yöntemleri ekleyebilir ve para giriş-çıkış işlemlerini gerçekleştirebilirsiniz. Ayrıca borç girme ve düşme işlemleri de admin yetkileriyle yapılabilmektedir. 
  
 Kasa programımızın en önemli özelliklerinden biri, yapılan işlemleri detaylı bir şekilde listeleyebilme ve gerektiğinde düzenleme imkanı sunmasıdır. Bu sayede kullanıcılar, finansal durumlarını anlık olarak gözlemleyebilir ve gerektiğinde düzenlemeler yapabilirler. 
- 
+
+Database Script:  [DBkasaProgrami.zip](https://github.com/user-attachments/files/15934397/DBkasaProgrami.zip)
+
+
 Proje sonundaki kazanımlar ; 
  
 •Entity Framework paketleri ile çalışma, 
